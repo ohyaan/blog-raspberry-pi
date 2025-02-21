@@ -9,22 +9,20 @@
       
       
       
-        <link rel="prev" href="../cpu_frequency_scaling/">
+      
+        <link rel="next" href="../how_to_create_docker_image_of_raspbian/">
       
       
-        <link rel="next" href="../power_saving_on_raspbian/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
-        <title>Static IP Configuration on Raspbian (Bookworm) - With Raspberry Pi</title>
+        <title>CPU Frequency Scaling - With Raspberry Pi</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -45,7 +43,7 @@
     
       <link rel="stylesheet" href="/stylesheets/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Static-IP-Configuration-on-Raspbian-Bookworm" class="md-skip">
+        <a href="#cpu-frequency-scaling" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Static IP Configuration on Raspbian (Bookworm)
+              CPU Frequency Scaling
             
           </span>
         </div>
@@ -184,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -251,41 +249,78 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../how_to_use_zram/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CPU Frequency Scaling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
+    CPU Frequency Scaling
     
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how_to_move_rootfs_to_external_usb/" class="md-nav__link">
+      
         
-  
-  <span class="md-ellipsis">
-    How to move rootfs to external USB storage
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-kernel-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux Kernel Configuration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -320,11 +355,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../cpu_frequency_scaling/" class="md-nav__link">
+      <a href="../how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    CPU Frequency Scaling
+    How to move rootfs to external USB storage
     
   </span>
   
@@ -339,96 +374,19 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Static IP Configuration on Raspbian (Bookworm)
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../optimizing_swap_with_zram_on_raspbian/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Static IP Configuration on Raspbian (Bookworm)
+    Optimizing Swap with ZRAM on Raspbian
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-Open-the-NetworkManager-Configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Open the NetworkManager Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-Modify-the-Connection-to-Set-a-Static-IP" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Modify the Connection to Set a Static IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-Save-and-Apply-the-Configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Save and Apply the Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-Verify-the-Static-IP" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Verify the Static IP
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,6 +404,28 @@
   
   <span class="md-ellipsis">
     Power Saving on Raspbian
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../static_ip_configuration_on_raspbian_%28bookworm%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static IP Configuration on Raspbian (Bookworm)
     
   </span>
   
@@ -490,36 +470,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-Open-the-NetworkManager-Configuration" class="md-nav__link">
+  <a href="#gpu-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Open the NetworkManager Configuration
+      GPU Configuration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-Modify-the-Connection-to-Set-a-Static-IP" class="md-nav__link">
+  <a href="#linux-kernel-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Modify the Connection to Set a Static IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-Save-and-Apply-the-Configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Save and Apply the Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-Verify-the-Static-IP" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Verify the Static IP
+      Linux Kernel Configuration
     </span>
   </a>
   
@@ -541,30 +503,68 @@
 
 
 
-<h1 id="Static-IP-Configuration-on-Raspbian-Bookworm">Static IP Configuration on Raspbian (Bookworm)</h1>
-<p>Setting a static IP address on Raspbian Bookworm ensures your Raspberry Pi always uses the same IP, simplifying remote access.</p>
-<h2 id="1-Open-the-NetworkManager-Configuration">1. Open the NetworkManager Configuration</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>show
+<h1 id="cpu-frequency-scaling">CPU Frequency Scaling</h1>
+<p>Raspbian, by default, sets the CPU frequency to a fixed 700MHz.
+For use cases where maximum CPU power is not always needed, reducing the CPU frequency can be reasonable.</p>
+<p>The following steps describe how to lower the CPU frequency during idle times.
+(This may have limited effects, so consider it an exploration of technical interest.)</p>
+<h2 id="gpu-configuration">GPU Configuration</h2>
+<p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well.
+Add the following lines:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Enable CPU frequency scaling</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nv">force_turbo</span><span class="o">=</span><span class="m">0</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># Set minimum CPU frequency (default is 700)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nv">arm_freq_min</span><span class="o">=</span><span class="m">100</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="2-Modify-the-Connection-to-Set-a-Static-IP">2. Modify the Connection to Set a Static IP</h2>
-<p><div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.addresses<span class="w"> </span><span class="m">192</span>.168.1.100/24
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.gateway<span class="w"> </span><span class="m">192</span>.168.1.1
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.dns<span class="w"> </span><span class="s2">&quot;8.8.8.8 8.8.4.4&quot;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.method<span class="w"> </span>manual
+<p>A reboot is required for these changes to take effect.</p>
+<p>For more details, refer to:
+<a href="http://elinux.org/RPiconfig">RPiconfig - eLinux.org</a></p>
+<h2 id="linux-kernel-configuration">Linux Kernel Configuration</h2>
+<p>By modifying the GPU settings, the CPU gains frequency scaling capabilities.
+However, the Linux kernel has its own control mechanisms, which by default lock the CPU frequency at 100MHz.</p>
+<p>You can check the current, maximum, and minimum CPU frequencies using the following commands:</p>
+<ul>
+<li>Current CPU frequency:
+  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
+</code></pre></div></td></tr></table></div></li>
+<li>Maximum CPU frequency:
+  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
+</code></pre></div></td></tr></table></div></li>
+<li>Minimum CPU frequency:
+  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq
+</code></pre></div></td></tr></table></div></li>
+</ul>
+<p>The Linux kernel includes a CPU frequency governor that determines how frequency changes occur. By default, Raspbian uses the <code>powersave</code> governor.</p>
+<p>Available governors:
+- <code>performance</code>: Always runs at the maximum CPU frequency.
+- <code>powersave</code>: Always runs at the minimum CPU frequency.
+- <code>ondemand</code>: Adjusts frequency based on CPU load (Raspbian toggles between min and max only).
+- <code>conservative</code>: Smoothly adjusts frequency based on CPU load.
+- <code>userspace</code>: Allows user-space daemons to control the CPU frequency.</p>
+<p>These settings can be changed during runtime via sysfs:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span>ondemand<span class="w"> </span>&gt;<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 </code></pre></div></td></tr></table></div>
-Replace <code>192.168.1.100</code> with your desired IP, and adjust the gateway and DNS settings as needed.</p>
-<h2 id="3-Save-and-Apply-the-Configuration">3. Save and Apply the Configuration</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>up<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="4-Verify-the-Static-IP">4. Verify the Static IP</h2>
-<p><div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>eth0
-</code></pre></div></td></tr></table></div>
-Check that the IP address matches your static configuration.</p>
-<hr />
-<p>Your Raspberry Pi is now set with a static IP address using NetworkManager! 🌐</p>
+<p>To make this setting persist after reboot, there are two options:</p>
+<ol>
+<li><strong>Adding the command to <code>/etc/rc.local</code></strong></li>
+<li>
+<p>This method executes the command after the kernel boots, which may result in a longer boot time.</p>
+</li>
+<li>
+<p><strong>Enabling kernel configuration options:</strong></p>
+</li>
+<li>Enable the following kernel options:
+     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
+</code></pre></div></td></tr></table></div></li>
+<li>This method requires rebuilding the kernel but ensures full CPU power during boot.</li>
+</ol>
+<p>After these settings are applied, you should observe CPU frequency changes based on system load.
+Give it a try!</p>
 
 
 
@@ -611,10 +611,10 @@ Check that the IP address matches your static configuration.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>

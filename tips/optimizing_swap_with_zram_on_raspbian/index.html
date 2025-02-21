@@ -9,20 +9,22 @@
       
       
       
-        <link rel="prev" href="../static-ip-configuration/">
+        <link rel="prev" href="../how_to_move_rootfs_to_external_usb_storage/">
       
       
+        <link rel="next" href="../power_saving_on_raspbian/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
-        <title>Power Saving on Raspbian - With Raspberry Pi</title>
+        <title>Optimizing Swap with ZRAM on Raspbian - With Raspberry Pi</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +45,7 @@
     
       <link rel="stylesheet" href="/stylesheets/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Power-Saving-on-Raspbian" class="md-skip">
+        <a href="#optimizing-swap-with-zram-on-raspbian" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Power Saving on Raspbian
+              Optimizing Swap with ZRAM on Raspbian
             
           </span>
         </div>
@@ -182,7 +184,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -252,33 +254,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_use_zram/" class="md-nav__link">
+      <a href="../cpu_frequency_scaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how_to_move_rootfs_to_external_usb/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to move rootfs to external USB storage
+    CPU Frequency Scaling
     
   </span>
   
@@ -318,33 +298,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../cpu_frequency_scaling/" class="md-nav__link">
+      <a href="../how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    CPU Frequency Scaling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../static-ip-configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Static IP Configuration on Raspbian (Bookworm)
+    How to move rootfs to external USB storage
     
   </span>
   
@@ -375,7 +333,7 @@
           
   
   <span class="md-ellipsis">
-    Power Saving on Raspbian
+    Optimizing Swap with ZRAM on Raspbian
     
   </span>
   
@@ -387,7 +345,7 @@
         
   
   <span class="md-ellipsis">
-    Power Saving on Raspbian
+    Optimizing Swap with ZRAM on Raspbian
     
   </span>
   
@@ -410,54 +368,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Check-Current-CPU-Frequency" class="md-nav__link">
+  <a href="#disable-default-swap-setting" class="md-nav__link">
     <span class="md-ellipsis">
-      Check Current CPU Frequency
+      Disable Default Swap Setting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Set-CPU-Governor-to-powersave" class="md-nav__link">
+  <a href="#enable-swap-on-zram" class="md-nav__link">
     <span class="md-ellipsis">
-      Set CPU Governor to 'powersave'
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Set-Maximum-CPU-Frequency" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Maximum CPU Frequency
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Disable-HDMI-to-Save-Power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable HDMI to Save Power
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Turn-Off-Unused-USB-Devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turn Off Unused USB Devices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Reduce-GPU-Memory-Allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reduce GPU Memory Allocation
+      Enable Swap on ZRAM
     </span>
   </a>
   
@@ -467,6 +389,50 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power_saving_on_raspbian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Saving on Raspbian
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../static_ip_configuration_on_raspbian_%28bookworm%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static IP Configuration on Raspbian (Bookworm)
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -506,54 +472,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Check-Current-CPU-Frequency" class="md-nav__link">
+  <a href="#disable-default-swap-setting" class="md-nav__link">
     <span class="md-ellipsis">
-      Check Current CPU Frequency
+      Disable Default Swap Setting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Set-CPU-Governor-to-powersave" class="md-nav__link">
+  <a href="#enable-swap-on-zram" class="md-nav__link">
     <span class="md-ellipsis">
-      Set CPU Governor to 'powersave'
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Set-Maximum-CPU-Frequency" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Maximum CPU Frequency
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Disable-HDMI-to-Save-Power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable HDMI to Save Power
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Turn-Off-Unused-USB-Devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turn Off Unused USB Devices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Reduce-GPU-Memory-Allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reduce GPU Memory Allocation
+      Enable Swap on ZRAM
     </span>
   </a>
   
@@ -575,32 +505,35 @@
 
 
 
-<h1 id="Power-Saving-on-Raspbian">Power Saving on Raspbian</h1>
-<p>Raspbian allows you to optimize settings for better power efficiency. This guide focuses on methods to reduce energy consumption, making your Raspberry Pi more efficient for battery-powered or always-on projects.</p>
-<h2 id="Check-Current-CPU-Frequency">Check Current CPU Frequency</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+<h1 id="optimizing-swap-with-zram-on-raspbian">Optimizing Swap with ZRAM on Raspbian</h1>
+<p>By default, Raspbian uses a swap file on the SD card, which can reduce performance and shorten the card's lifespan. ZRAM is a solution that creates a compressed swap partition in RAM, improving both performance and longevity.</p>
+<h2 id="disable-default-swap-setting">Disable Default Swap Setting</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>chkconfig
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>sudo<span class="w"> </span>chkconfig<span class="w"> </span>dphys-swapfile<span class="w"> </span>off
 </code></pre></div></td></tr></table></div>
-<h2 id="Set-CPU-Governor-to-powersave">Set CPU Governor to 'powersave'</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>cpufreq-set<span class="w"> </span>-g<span class="w"> </span>powersave
-</code></pre></div></td></tr></table></div>
-<h2 id="Set-Maximum-CPU-Frequency">Set Maximum CPU Frequency</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>cpufreq-set<span class="w"> </span>-u<span class="w"> </span><span class="m">600000</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="Disable-HDMI-to-Save-Power">Disable HDMI to Save Power</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>/usr/bin/tvservice<span class="w"> </span>-o
-</code></pre></div></td></tr></table></div>
-<h2 id="Turn-Off-Unused-USB-Devices">Turn Off Unused USB Devices</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;1-1&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/bus/usb/drivers/usb/unbind
-</code></pre></div></td></tr></table></div>
-<h2 id="Reduce-GPU-Memory-Allocation">Reduce GPU Memory Allocation</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="c1"># Add or modify:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nv">gpu_mem</span><span class="o">=</span><span class="m">16</span>
-</code></pre></div></td></tr></table></div>
-<p>Applying these settings can significantly reduce power consumption, ideal for headless setups or long-term operations.</p>
-<p>Happy optimizing your Raspberry Pi! ⚡</p>
+<h2 id="enable-swap-on-zram">Enable Swap on ZRAM</h2>
+<ol>
+<li>
+<p>Load the ZRAM module:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>modprobe<span class="w"> </span>zram
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>Set a 128MB ZRAM swap space:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="m">128</span><span class="o">*</span><span class="m">1024</span><span class="o">*</span><span class="m">1024</span><span class="k">))</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/zram0/disksize
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>Create and enable the swap:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/dev/zram0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>-p<span class="w"> </span><span class="m">10</span><span class="w"> </span>/dev/zram0
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<p>With ZRAM enabled, your Raspberry Pi will benefit from faster swap performance and reduced SD card wear.</p>
+<p>Enjoy optimizing your Raspberry Pi!</p>
 
 
 
@@ -647,10 +580,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>

@@ -9,20 +9,20 @@
       
       
       
+        <link rel="prev" href="../power_saving_on_raspbian/">
       
-        <link rel="next" href="../how_to_move_rootfs_to_external_usb/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
-        <title>Optimizing Swap with ZRAM on Raspbian - With Raspberry Pi</title>
+        <title>Static IP Configuration on Raspbian (Bookworm) - With Raspberry Pi</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +43,7 @@
     
       <link rel="stylesheet" href="/stylesheets/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Optimizing-Swap-with-ZRAM-on-Raspbian" class="md-skip">
+        <a href="#static-ip-configuration-on-raspbian-bookworm" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Optimizing Swap with ZRAM on Raspbian
+              Static IP Configuration on Raspbian (Bookworm)
             
           </span>
         </div>
@@ -182,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -249,95 +249,14 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Disable-Default-Swap-Setting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable Default Swap Setting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Enable-Swap-on-ZRAM" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable Swap on ZRAM
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../how_to_move_rootfs_to_external_usb/" class="md-nav__link">
+      <a href="../cpu_frequency_scaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to move rootfs to external USB storage
+    CPU Frequency Scaling
     
   </span>
   
@@ -377,11 +296,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../cpu_frequency_scaling/" class="md-nav__link">
+      <a href="../how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    CPU Frequency Scaling
+    How to move rootfs to external USB storage
     
   </span>
   
@@ -399,11 +318,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../static-ip-configuration/" class="md-nav__link">
+      <a href="../optimizing_swap_with_zram_on_raspbian/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Static IP Configuration on Raspbian (Bookworm)
+    Optimizing Swap with ZRAM on Raspbian
     
   </span>
   
@@ -431,6 +350,105 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Static IP Configuration on Raspbian (Bookworm)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Static IP Configuration on Raspbian (Bookworm)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-open-the-networkmanager-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Open the NetworkManager Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-modify-the-connection-to-set-a-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modify the Connection to Set a Static IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-save-and-apply-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Save and Apply the Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verify-the-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verify the Static IP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -470,18 +488,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Disable-Default-Swap-Setting" class="md-nav__link">
+  <a href="#1-open-the-networkmanager-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Disable Default Swap Setting
+      1. Open the NetworkManager Configuration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Enable-Swap-on-ZRAM" class="md-nav__link">
+  <a href="#2-modify-the-connection-to-set-a-static-ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Enable Swap on ZRAM
+      2. Modify the Connection to Set a Static IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-save-and-apply-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Save and Apply the Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verify-the-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verify the Static IP
     </span>
   </a>
   
@@ -503,35 +539,30 @@
 
 
 
-<h1 id="Optimizing-Swap-with-ZRAM-on-Raspbian">Optimizing Swap with ZRAM on Raspbian</h1>
-<p>By default, Raspbian uses a swap file on the SD card, which can reduce performance and shorten the card's lifespan. ZRAM is a solution that creates a compressed swap partition in RAM, improving both performance and longevity.</p>
-<h2 id="Disable-Default-Swap-Setting">Disable Default Swap Setting</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>chkconfig
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>sudo<span class="w"> </span>chkconfig<span class="w"> </span>dphys-swapfile<span class="w"> </span>off
+<h1 id="static-ip-configuration-on-raspbian-bookworm">Static IP Configuration on Raspbian (Bookworm)</h1>
+<p>Setting a static IP address on Raspbian Bookworm ensures your Raspberry Pi always uses the same IP, simplifying remote access.</p>
+<h2 id="1-open-the-networkmanager-configuration">1. Open the NetworkManager Configuration</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>show
 </code></pre></div></td></tr></table></div>
-<h2 id="Enable-Swap-on-ZRAM">Enable Swap on ZRAM</h2>
-<ol>
-<li>
-<p>Load the ZRAM module:
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>modprobe<span class="w"> </span>zram
-</code></pre></div></td></tr></table></div></p>
-</li>
-<li>
-<p>Set a 128MB ZRAM swap space:
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="m">128</span><span class="o">*</span><span class="m">1024</span><span class="o">*</span><span class="m">1024</span><span class="k">))</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/zram0/disksize
-</code></pre></div></td></tr></table></div></p>
-</li>
-<li>
-<p>Create and enable the swap:
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/dev/zram0
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>-p<span class="w"> </span><span class="m">10</span><span class="w"> </span>/dev/zram0
-</code></pre></div></td></tr></table></div></p>
-</li>
-</ol>
-<p>With ZRAM enabled, your Raspberry Pi will benefit from faster swap performance and reduced SD card wear.</p>
-<p>Enjoy optimizing your Raspberry Pi!</p>
+<h2 id="2-modify-the-connection-to-set-a-static-ip">2. Modify the Connection to Set a Static IP</h2>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.addresses<span class="w"> </span><span class="m">192</span>.168.1.100/24
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.gateway<span class="w"> </span><span class="m">192</span>.168.1.1
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.dns<span class="w"> </span><span class="s2">&quot;8.8.8.8 8.8.4.4&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>modify<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span><span class="w"> </span>ipv4.method<span class="w"> </span>manual
+</code></pre></div></td></tr></table></div>
+Replace <code>192.168.1.100</code> with your desired IP, and adjust the gateway and DNS settings as needed.</p>
+<h2 id="3-save-and-apply-the-configuration">3. Save and Apply the Configuration</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>up<span class="w"> </span><span class="s2">&quot;Wired connection 1&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="4-verify-the-static-ip">4. Verify the Static IP</h2>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>eth0
+</code></pre></div></td></tr></table></div>
+Check that the IP address matches your static configuration.</p>
+<hr />
+<p>Your Raspberry Pi is now set with a static IP address using NetworkManager! 🌐</p>
 
 
 
@@ -578,10 +609,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>
