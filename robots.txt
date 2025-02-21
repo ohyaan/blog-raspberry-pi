@@ -1,0 +1,16 @@
+User-Agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent:Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)
+Disallow: /
+
+User-agent:Mozilla/5.0 (compatible; VelenPublicWebCrawler/1.0; +https://velen.io)&quot;
+Disallow: /
