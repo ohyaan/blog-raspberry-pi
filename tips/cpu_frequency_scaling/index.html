@@ -502,13 +502,10 @@
 
 
 <h1 id="cpu-frequency-scaling">CPU Frequency Scaling</h1>
-<p>Raspbian, by default, sets the CPU frequency to a fixed 700MHz.
-For use cases where maximum CPU power is not always needed, reducing the CPU frequency can be reasonable.</p>
-<p>The following steps describe how to lower the CPU frequency during idle times.
-(This may have limited effects, so consider it an exploration of technical interest.)</p>
+<p>Raspbian, by default, sets the CPU frequency to a fixed 700MHz. For use cases where maximum CPU power is not always needed, reducing the CPU frequency can be reasonable.</p>
+<p>The following steps describe how to lower the CPU frequency during idle times. (This may have limited effects, so consider it an exploration of technical interest.)</p>
 <h2 id="gpu-configuration">GPU Configuration</h2>
-<p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well.
-Add the following lines:</p>
+<p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well. Add the following lines:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -521,8 +518,7 @@ Add the following lines:</p>
 <p>For more details, refer to:
 <a href="http://elinux.org/RPiconfig">RPiconfig - eLinux.org</a></p>
 <h2 id="linux-kernel-configuration">Linux Kernel Configuration</h2>
-<p>By modifying the GPU settings, the CPU gains frequency scaling capabilities.
-However, the Linux kernel has its own control mechanisms, which by default lock the CPU frequency at 100MHz.</p>
+<p>By modifying the GPU settings, the CPU gains frequency scaling capabilities. However, the Linux kernel has its own control mechanisms, which by default lock the CPU frequency at 100MHz.</p>
 <p>You can check the current, maximum, and minimum CPU frequencies using the following commands:</p>
 <ul>
 <li>Current CPU frequency:
