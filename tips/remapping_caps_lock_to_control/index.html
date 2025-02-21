@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="../power_saving_on_raspbian/">
       
-        <link rel="next" href="../how_to_create_docker_image_of_raspbian/">
+      
+        <link rel="next" href="../static_ip_configuration_on_raspbian/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>CPU Frequency Scaling - With Raspberry Pi</title>
+        <title>Remapping Caps Lock to Control - With Raspberry Pi</title>
       
     
     
@@ -66,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cpu-frequency-scaling" class="md-skip">
+        <a href="#remapping-caps-lock-to-control" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CPU Frequency Scaling
+              Remapping Caps Lock to Control
             
           </span>
         </div>
@@ -209,31 +211,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    CPU Frequency Scaling
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cpu_frequency_scaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -243,44 +224,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gpu-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      GPU Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-kernel-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux Kernel Configuration
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -378,10 +321,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../remapping_caps_lock_to_control/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Remapping Caps Lock to Control
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -391,6 +355,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-remap-caps-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Remap Caps Lock
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Remap Caps Lock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-locate-or-create-the-environment-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Locate or Create the Environment Configuration File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modify-the-configuration-to-remap-caps-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modify the Configuration to Remap Caps Lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-apply-the-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Apply the Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -452,20 +478,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gpu-configuration" class="md-nav__link">
+  <a href="#steps-to-remap-caps-lock" class="md-nav__link">
     <span class="md-ellipsis">
-      GPU Configuration
+      Steps to Remap Caps Lock
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Remap Caps Lock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-locate-or-create-the-environment-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Locate or Create the Environment Configuration File
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-kernel-configuration" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-modify-the-configuration-to-remap-caps-lock" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux Kernel Configuration
+      2. Modify the Configuration to Remap Caps Lock
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-apply-the-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Apply the Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -501,68 +551,32 @@
 
 
 
-<h1 id="cpu-frequency-scaling">CPU Frequency Scaling</h1>
-<p>Raspbian, by default, sets the CPU frequency to a fixed 700MHz.
-For use cases where maximum CPU power is not always needed, reducing the CPU frequency can be reasonable.</p>
-<p>The following steps describe how to lower the CPU frequency during idle times.
-(This may have limited effects, so consider it an exploration of technical interest.)</p>
-<h2 id="gpu-configuration">GPU Configuration</h2>
-<p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well.
-Add the following lines:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Enable CPU frequency scaling</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nv">force_turbo</span><span class="o">=</span><span class="m">0</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># Set minimum CPU frequency (default is 700)</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nv">arm_freq_min</span><span class="o">=</span><span class="m">100</span>
-</code></pre></div></td></tr></table></div>
-<p>A reboot is required for these changes to take effect.</p>
-<p>For more details, refer to:
-<a href="http://elinux.org/RPiconfig">RPiconfig - eLinux.org</a></p>
-<h2 id="linux-kernel-configuration">Linux Kernel Configuration</h2>
-<p>By modifying the GPU settings, the CPU gains frequency scaling capabilities.
-However, the Linux kernel has its own control mechanisms, which by default lock the CPU frequency at 100MHz.</p>
-<p>You can check the current, maximum, and minimum CPU frequencies using the following commands:</p>
+<h1 id="remapping-caps-lock-to-control">Remapping Caps Lock to Control</h1>
+<h2 id="steps-to-remap-caps-lock">Steps to Remap Caps Lock</h2>
+<h3 id="1-locate-or-create-the-environment-configuration-file">1. Locate or Create the Environment Configuration File</h3>
 <ul>
-<li>Current CPU frequency:
-  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
-</code></pre></div></td></tr></table></div></li>
-<li>Maximum CPU frequency:
-  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
-</code></pre></div></td></tr></table></div></li>
-<li>Minimum CPU frequency:
-  <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq
-</code></pre></div></td></tr></table></div></li>
+<li>After configuring your keyboard settings (e.g., using <code>raspi-config</code>), the file <code>~/.config/labwc/environment</code> should be created with your keyboard configurations.</li>
+<li>If this file doesn't exist, create it manually.</li>
 </ul>
-<p>The Linux kernel includes a CPU frequency governor that determines how frequency changes occur. By default, Raspbian uses the <code>powersave</code> governor.</p>
-<p>Available governors:
-- <code>performance</code>: Always runs at the maximum CPU frequency.
-- <code>powersave</code>: Always runs at the minimum CPU frequency.
-- <code>ondemand</code>: Adjusts frequency based on CPU load (Raspbian toggles between min and max only).
-- <code>conservative</code>: Smoothly adjusts frequency based on CPU load.
-- <code>userspace</code>: Allows user-space daemons to control the CPU frequency.</p>
-<p>These settings can be changed during runtime via sysfs:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span>ondemand<span class="w"> </span>&gt;<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+<h3 id="2-modify-the-configuration-to-remap-caps-lock">2. Modify the Configuration to Remap Caps Lock</h3>
+<ul>
+<li>Open <code>~/.config/labwc/environment</code> in a text editor.</li>
+<li>Add the following line to remap Caps Lock to Control:</li>
+</ul>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">XKB_DEFAULT_OPTIONS</span><span class="o">=</span>ctrl:nocaps
 </code></pre></div></td></tr></table></div>
-<p>To make this setting persist after reboot, there are two options:</p>
-<ol>
-<li><strong>Adding the command to <code>/etc/rc.local</code></strong></li>
-<li>
-<p>This method executes the command after the kernel boots, which may result in a longer boot time.</p>
-</li>
-<li>
-<p><strong>Enabling kernel configuration options:</strong></p>
-</li>
-<li>Enable the following kernel options:
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
-</code></pre></div></td></tr></table></div></li>
-<li>This method requires rebuilding the kernel but ensures full CPU power during boot.</li>
-</ol>
-<p>After these settings are applied, you should observe CPU frequency changes based on system load.
-Give it a try!</p>
+<ul>
+<li>To swap Caps Lock and Control, use:</li>
+</ul>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nv">XKB_DEFAULT_OPTIONS</span><span class="o">=</span>ctrl:swapcaps
+</code></pre></div></td></tr></table></div>
+<h3 id="3-apply-the-changes">3. Apply the Changes</h3>
+<ul>
+<li>Either log out and log back in, or execute the following command:</li>
+</ul>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>labwc<span class="w"> </span>--reconfig
+</code></pre></div></td></tr></table></div>
+<p>These steps will configure the Caps Lock key to function as a Control key in labwc.</p>
 
 
 
