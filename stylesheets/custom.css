@@ -1,0 +1,32 @@
+nav .twemoji {
+    display: inline-flex;
+    height: 1.125em;
+    width: 1.125em;
+    fill: currentColor;
+    vertical-align: text-top;
+}
+
+.md-typeset__table th {
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+.md-grid {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: none;
+}
+
+object {
+    max-width: 100%;
+}
+
+.md-typeset h5 {
+    text-transform: none;
+}
+
+.my-version {
+    margin-left: 1.2rem;
+    font-weight: normal;
+    font-size: smaller;
+}
