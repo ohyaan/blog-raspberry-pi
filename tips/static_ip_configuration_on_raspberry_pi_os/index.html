@@ -18,7 +18,7 @@
     
     
       
-        <title>Static IP Configuration on Raspbian - With Raspberry Pi</title>
+        <title>Static IP Configuration on Raspberry Pi OS - With Raspberry Pi</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#static-ip-configuration-on-raspbian" class="md-skip">
+        <a href="#static-ip-configuration-on-raspberry-pi-os" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Static IP Configuration on Raspbian
+              Static IP Configuration on Raspberry Pi OS
             
           </span>
         </div>
@@ -176,6 +176,8 @@
       
         
       
+        
+      
     
     
     
@@ -234,11 +236,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_create_docker_image_of_raspbian/" class="md-nav__link">
+      <a href="../how_to_create_docker_image_of_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to Create Docker Image of Raspbian
+    How to Create Docker Image of Raspberry Pi OS
     
   </span>
   
@@ -278,11 +280,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../optimizing_swap_with_zram_on_raspbian/" class="md-nav__link">
+      <a href="../how_to_setup_cross_compile_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
+    How to setup cross compile environment
     
   </span>
   
@@ -300,11 +302,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../power_saving_on_raspbian/" class="md-nav__link">
+      <a href="../optimizing_swap_with_zram_on_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Power Saving on Raspbian
+    Optimizing Swap with ZRAM on Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power_saving_on_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Saving on Raspberry Pi OS
     
   </span>
   
@@ -357,7 +381,7 @@
           
   
   <span class="md-ellipsis">
-    Static IP Configuration on Raspbian
+    Static IP Configuration on Raspberry Pi OS
     
   </span>
   
@@ -369,7 +393,7 @@
         
   
   <span class="md-ellipsis">
-    Static IP Configuration on Raspbian
+    Static IP Configuration on Raspberry Pi OS
     
   </span>
   
@@ -524,21 +548,21 @@
       
       
       
-        <span class="md-tag">bookworm</span>
+        <span class="md-tag">Raspberry Pi OS</span>
       
     
       
       
       
-        <span class="md-tag">raspbian</span>
+        <span class="md-tag">bookworm</span>
       
     
   </nav>
 
 
 
-<h1 id="static-ip-configuration-on-raspbian">Static IP Configuration on Raspbian</h1>
-<p>Setting a static IP address on Raspbian Bookworm ensures your Raspberry Pi always uses the same IP, simplifying remote access.</p>
+<h1 id="static-ip-configuration-on-raspberry-pi-os">Static IP Configuration on Raspberry Pi OS</h1>
+<p>Setting a static IP address on Raspberry Pi OS Bookworm ensures your Raspberry Pi always uses the same IP, simplifying remote access.</p>
 <h2 id="1-open-the-networkmanager-configuration">1. Open the NetworkManager Configuration</h2>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>nmcli<span class="w"> </span>connection<span class="w"> </span>show
 </code></pre></div></td></tr></table></div>

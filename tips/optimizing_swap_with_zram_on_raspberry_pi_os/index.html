@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../optimizing_swap_with_zram_on_raspbian/">
+        <link rel="prev" href="../how_to_setup_cross_compile_environment/">
       
       
-        <link rel="next" href="../remapping_caps_lock_to_control/">
+        <link rel="next" href="../power_saving_on_raspberry_pi_os/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Power Saving on Raspbian - With Raspberry Pi</title>
+        <title>Optimizing Swap with ZRAM on Raspberry Pi OS - With Raspberry Pi</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#power-saving-on-raspbian" class="md-skip">
+        <a href="#optimizing-swap-with-zram-on-raspberry-pi-os" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Power Saving on Raspbian
+              Optimizing Swap with ZRAM on Raspberry Pi OS
             
           </span>
         </div>
@@ -178,6 +178,8 @@
       
         
       
+        
+      
     
     
     
@@ -236,11 +238,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_create_docker_image_of_raspbian/" class="md-nav__link">
+      <a href="../how_to_create_docker_image_of_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to Create Docker Image of Raspbian
+    How to Create Docker Image of Raspberry Pi OS
     
   </span>
   
@@ -280,11 +282,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../optimizing_swap_with_zram_on_raspbian/" class="md-nav__link">
+      <a href="../how_to_setup_cross_compile_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Optimizing Swap with ZRAM on Raspbian
+    How to setup cross compile environment
     
   </span>
   
@@ -315,7 +317,7 @@
           
   
   <span class="md-ellipsis">
-    Power Saving on Raspbian
+    Optimizing Swap with ZRAM on Raspberry Pi OS
     
   </span>
   
@@ -327,7 +329,7 @@
         
   
   <span class="md-ellipsis">
-    Power Saving on Raspbian
+    Optimizing Swap with ZRAM on Raspberry Pi OS
     
   </span>
   
@@ -350,54 +352,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-current-cpu-frequency" class="md-nav__link">
+  <a href="#1-disable-default-swap-setting" class="md-nav__link">
     <span class="md-ellipsis">
-      Check Current CPU Frequency
+      1. Disable Default Swap Setting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-cpu-governor-to-powersave" class="md-nav__link">
+  <a href="#2-enable-swap-on-zram" class="md-nav__link">
     <span class="md-ellipsis">
-      Set CPU Governor to 'powersave'
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-maximum-cpu-frequency" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Maximum CPU Frequency
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#disable-hdmi-to-save-power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable HDMI to Save Power
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turn-off-unused-usb-devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turn Off Unused USB Devices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reduce-gpu-memory-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reduce GPU Memory Allocation
+      2. Enable Swap on ZRAM
     </span>
   </a>
   
@@ -407,6 +373,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power_saving_on_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Saving on Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -441,11 +429,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../static_ip_configuration_on_raspbian/" class="md-nav__link">
+      <a href="../static_ip_configuration_on_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Static IP Configuration on Raspbian
+    Static IP Configuration on Raspberry Pi OS
     
   </span>
   
@@ -490,54 +478,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-current-cpu-frequency" class="md-nav__link">
+  <a href="#1-disable-default-swap-setting" class="md-nav__link">
     <span class="md-ellipsis">
-      Check Current CPU Frequency
+      1. Disable Default Swap Setting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-cpu-governor-to-powersave" class="md-nav__link">
+  <a href="#2-enable-swap-on-zram" class="md-nav__link">
     <span class="md-ellipsis">
-      Set CPU Governor to 'powersave'
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-maximum-cpu-frequency" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Maximum CPU Frequency
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#disable-hdmi-to-save-power" class="md-nav__link">
-    <span class="md-ellipsis">
-      Disable HDMI to Save Power
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turn-off-unused-usb-devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turn Off Unused USB Devices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reduce-gpu-memory-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reduce GPU Memory Allocation
+      2. Enable Swap on ZRAM
     </span>
   </a>
   
@@ -562,45 +514,40 @@
       
       
       
-        <span class="md-tag">bookworm</span>
+        <span class="md-tag">Raspberry Pi OS</span>
       
     
       
       
       
-        <span class="md-tag">raspbian</span>
+        <span class="md-tag">bookworm</span>
       
     
   </nav>
 
 
 
-<h1 id="power-saving-on-raspbian">Power Saving on Raspbian</h1>
-<p>Raspbian allows you to optimize settings for better power efficiency. This guide focuses on methods to reduce energy consumption, making your Raspberry Pi more efficient for battery-powered or always-on projects.</p>
-<h2 id="check-current-cpu-frequency">Check Current CPU Frequency</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+<h1 id="optimizing-swap-with-zram-on-raspberry-pi-os">Optimizing Swap with ZRAM on Raspberry Pi OS</h1>
+<p>By default, Raspberry Pi OS uses a swap file on the SD card, which can reduce performance and shorten the card's lifespan. ZRAM is a solution that creates a compressed swap partition in RAM, improving both performance and longevity.</p>
+<h3 id="1-disable-default-swap-setting">1. Disable Default Swap Setting</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>chkconfig
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>sudo<span class="w"> </span>chkconfig<span class="w"> </span>dphys-swapfile<span class="w"> </span>off
 </code></pre></div></td></tr></table></div>
-<h2 id="set-cpu-governor-to-powersave">Set CPU Governor to 'powersave'</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>cpufreq-set<span class="w"> </span>-g<span class="w"> </span>powersave
-</code></pre></div></td></tr></table></div>
-<h2 id="set-maximum-cpu-frequency">Set Maximum CPU Frequency</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>cpufreq-set<span class="w"> </span>-u<span class="w"> </span><span class="m">600000</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="disable-hdmi-to-save-power">Disable HDMI to Save Power</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>/usr/bin/tvservice<span class="w"> </span>-o
-</code></pre></div></td></tr></table></div>
-<h2 id="turn-off-unused-usb-devices">Turn Off Unused USB Devices</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;1-1&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/bus/usb/drivers/usb/unbind
-</code></pre></div></td></tr></table></div>
-<h2 id="reduce-gpu-memory-allocation">Reduce GPU Memory Allocation</h2>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="c1"># Add or modify:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nv">gpu_mem</span><span class="o">=</span><span class="m">16</span>
-</code></pre></div></td></tr></table></div>
-<p>Applying these settings can significantly reduce power consumption, ideal for headless setups or long-term operations.</p>
-<p>Happy optimizing your Raspberry Pi! ⚡</p>
+<h3 id="2-enable-swap-on-zram">2. Enable Swap on ZRAM</h3>
+<p>Load the ZRAM module:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>modprobe<span class="w"> </span>zram
+</code></pre></div></td></tr></table></div></p>
+<p>Set a 128MB ZRAM swap space:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span><span class="k">$((</span><span class="m">128</span><span class="o">*</span><span class="m">1024</span><span class="o">*</span><span class="m">1024</span><span class="k">))</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/zram0/disksize
+</code></pre></div></td></tr></table></div></p>
+<p>Create and enable the swap:
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/dev/zram0
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>-p<span class="w"> </span><span class="m">10</span><span class="w"> </span>/dev/zram0
+</code></pre></div></td></tr></table></div></p>
+<p>With ZRAM enabled, your Raspberry Pi will benefit from faster swap performance and reduced SD card wear.</p>
+<p>Enjoy optimizing your Raspberry Pi!</p>
 
 
 
