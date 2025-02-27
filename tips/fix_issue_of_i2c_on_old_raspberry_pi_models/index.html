@@ -613,13 +613,13 @@
 
 <h1 id="fix-issue-of-i2c-on-old-raspberry-pi-models">Fix Issue of I2C on Old Raspberry Pi Models</h1>
 <h2 id="phenomenon">Phenomenon</h2>
-<p>Raspberry Pi OS (bookworm) seems to have issues with I2C on older models like the Raspberry Pi 2B+.</p>
-<p>After enabling I2C via raspi-config, expected pin assignments are:</p>
+<p>Raspberry Pi OS (bookworm) seems to have issues with I2C on older models like the Raspberry Pi 2B+. Even if I2C is enabled via <code>raspi-config</code>, it may not be available.</p>
+<p>Expected pin assignments are:</p>
 <ul>
-<li>GPIO2: SDA</li>
-<li>GPIO3: SCL</li>
+<li><strong>GPIO2:</strong> SDA</li>
+<li><strong>GPIO3:</strong> SCL</li>
 </ul>
-<p>In case of Raspberry Pi 2B+, GPIO3 is set as input. (In case of Raspberry Pi 4B, GPIO3 is set as SCL.)</p>
+<p>In the case of Raspberry Pi 2B+, GPIO3 is set as input. (In the case of Raspberry Pi 4B, GPIO3 is set as SCL.)</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -707,10 +707,12 @@ Navigate to Interfacing Options -&gt; I2C and enable I2C.</p>
 <a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="m">70</span>:<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--<span class="w"> </span>--
 </code></pre></div></td></tr></table></div></p>
 <p>Then we can use the I2C device properly.</p>
-<p>Drawbacks of software I2C:
-- High CPU load (slower than hardware I2C)
-- Low clock accuracy (not suitable for high-speed communication)
-- Weak in real-time processing (prone to delays)</p>
+<p>Drawbacks of software I2C:</p>
+<ul>
+<li>High CPU load (slower than hardware I2C)</li>
+<li>Low clock accuracy (not suitable for high-speed communication)</li>
+<li>Weak in real-time processing (prone to delays)</li>
+</ul>
 
 
 
