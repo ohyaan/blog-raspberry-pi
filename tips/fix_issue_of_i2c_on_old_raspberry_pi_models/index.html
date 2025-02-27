@@ -614,12 +614,12 @@
 <h1 id="fix-issue-of-i2c-on-old-raspberry-pi-models">Fix Issue of I2C on Old Raspberry Pi Models</h1>
 <h2 id="phenomenon">Phenomenon</h2>
 <p>Raspberry Pi OS (bookworm) seems to have issues with I2C on older models like the Raspberry Pi 2B+. Even if I2C is enabled via <code>raspi-config</code>, it may not be available.</p>
-<p>Expected pin assignments are:</p>
+<p>Expected GPIO pin assignments are:</p>
 <ul>
 <li><strong>GPIO2:</strong> SDA</li>
 <li><strong>GPIO3:</strong> SCL</li>
 </ul>
-<p>In the case of Raspberry Pi 2B+, GPIO3 is set as input. (In the case of Raspberry Pi 4B, GPIO3 is set as SCL.)</p>
+<p>In the case of Raspberry Pi 2B+, GPIO3 is set as input. (In the case of Raspberry Pi 4B, GPIO3 is set as SCL and no problem.)</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
