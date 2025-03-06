@@ -2129,8 +2129,8 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="display-and-audio-settings">Display and Audio Settings</h3>
 <h4 id="display-resolution-and-monitor-configuration">Display Resolution and Monitor Configuration</h4>
-<p>Edit <code>/boot/config.txt</code>:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
+<p>Edit <code>/boot/firmware/config.txt</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/config.txt
 </code></pre></div></td></tr></table></div>
 <p>Common display settings:</p>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
@@ -2248,7 +2248,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="performance-optimization">Performance Optimization</h3>
 <h4 id="memory-split">Memory Split</h4>
-<p>Adjust GPU memory allocation in <code>/boot/config.txt</code>:</p>
+<p>Adjust GPU memory allocation in <code>/boot/firmware/config.txt</code>:</p>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
 <span class="normal"><a href="#__codelineno-15-2">2</a></span>
 <span class="normal"><a href="#__codelineno-15-3">3</a></span>
@@ -2261,7 +2261,7 @@
 </code></pre></div></td></tr></table></div>
 <h4 id="overclocking">Overclocking</h4>
 <p><strong>Warning</strong>: Overclocking may reduce system stability and lifespan. Always ensure adequate cooling.</p>
-<p>Edit <code>/boot/config.txt</code> (values depend on Pi model):</p>
+<p>Edit <code>/boot/firmware/config.txt</code> (values depend on Pi model):</p>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
 <span class="normal"><a href="#__codelineno-16-2">2</a></span>
 <span class="normal"><a href="#__codelineno-16-3">3</a></span>
@@ -2446,7 +2446,7 @@
 <a id="__codelineno-28-5" name="__codelineno-28-5"></a>nano<span class="w"> </span>~/.vnc/config
 </code></pre></div></td></tr></table></div>
 <h2 id="boot-configuration-in-detail">Boot Configuration in Detail</h2>
-<p>The <code>/boot/config.txt</code> file is the primary configuration file for hardware settings. It's similar to BIOS on traditional computers.</p>
+<p>The <code>/boot/firmware/config.txt</code> file is the primary configuration file for hardware settings. It's similar to BIOS on traditional computers.</p>
 <h3 id="common-boot-configuration-options">Common Boot Configuration Options</h3>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
@@ -2527,8 +2527,8 @@
 <a id="__codelineno-29-39" name="__codelineno-29-39"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">gpio-fan,gpiopin=14,temp=60000</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="managing-cmdlinetxt">Managing cmdline.txt</h3>
-<p>The <code>/boot/cmdline.txt</code> file contains kernel boot parameters:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/cmdline.txt
+<p>The <code>/boot/firmware/cmdline.txt</code> file contains kernel boot parameters:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/cmdline.txt
 </code></pre></div></td></tr></table></div>
 <p>Common modifications:</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1"> 1</a></span>
@@ -2806,7 +2806,7 @@
 </ol>
 <h4 id="display-issues">Display Issues</h4>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
-<span class="normal"><a href="#__codelineno-41-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1"># Force safe video settings by adding to /boot/config.txt:</span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1"># Force safe video settings by adding to /boot/firmware/config.txt:</span>
 <a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="nv">hdmi_safe</span><span class="o">=</span><span class="m">1</span>
 </code></pre></div></td></tr></table></div>
 <h4 id="networking-issues-after-static-ip-configuration">Networking Issues After Static IP Configuration</h4>
@@ -2848,12 +2848,12 @@
 <span class="normal"><a href="#__codelineno-44-5">5</a></span>
 <span class="normal"><a href="#__codelineno-44-6">6</a></span>
 <span class="normal"><a href="#__codelineno-44-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="c1"># Create a backup of working configurations</span>
-<a id="__codelineno-44-2" name="__codelineno-44-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.txt.backup
-<a id="__codelineno-44-3" name="__codelineno-44-3"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/cmdline.txt<span class="w"> </span>/boot/cmdline.txt.backup
+<a id="__codelineno-44-2" name="__codelineno-44-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/firmware/config.txt<span class="w"> </span>/boot/firmware/config.txt.backup
+<a id="__codelineno-44-3" name="__codelineno-44-3"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/firmware/cmdline.txt<span class="w"> </span>/boot/firmware/cmdline.txt.backup
 <a id="__codelineno-44-4" name="__codelineno-44-4"></a>
 <a id="__codelineno-44-5" name="__codelineno-44-5"></a><span class="c1"># Create scenario-specific configurations</span>
-<a id="__codelineno-44-6" name="__codelineno-44-6"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.overclock.txt
-<a id="__codelineno-44-7" name="__codelineno-44-7"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.media-center.txt
+<a id="__codelineno-44-6" name="__codelineno-44-6"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/firmware/config.txt<span class="w"> </span>/boot/config.overclock.txt
+<a id="__codelineno-44-7" name="__codelineno-44-7"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/firmware/config.txt<span class="w"> </span>/boot/config.media-center.txt
 </code></pre></div></td></tr></table></div>
 <p>Edit the NOOBS <code>recovery.cmdline</code> file to select configurations during boot:</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span>
@@ -2876,7 +2876,7 @@
 <ol>
 <li>
 <p><strong>Always backup configurations before making changes</strong>:
-   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.txt.<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/firmware/config.txt<span class="w"> </span>/boot/firmware/config.txt.<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
 </code></pre></div></td></tr></table></div></p>
 </li>
 <li>

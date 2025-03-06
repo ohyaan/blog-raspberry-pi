@@ -1297,19 +1297,7 @@
       
       
       
-        <span class="md-tag">battery operation</span>
-      
-    
-      
-      
-      
         <span class="md-tag">bookworm</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">power optimization</span>
       
     
   </nav>
@@ -1449,7 +1437,7 @@
 </code></pre></div></td></tr></table></div></p>
 <h2 id="gpu-and-memory-optimizations">GPU and Memory Optimizations</h2>
 <h3 id="reduce-gpu-memory-allocation">Reduce GPU Memory Allocation</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/config.txt
 </code></pre></div></td></tr></table></div>
 <p>Add or modify:
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
@@ -1461,7 +1449,7 @@
 - Light desktop use: 64MB
 - Multimedia/gaming: 128MB or higher</p>
 <h3 id="disable-unused-hardware">Disable Unused Hardware</h3>
-<p>Edit <code>/boot/config.txt</code> to disable hardware components you're not using:</p>
+<p>Edit <code>/boot/firmware/config.txt</code> to disable hardware components you're not using:</p>
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
@@ -1523,7 +1511,7 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="underclocking-and-undervolting">Underclocking and Undervolting</h3>
 <p><strong>Warning</strong>: This can cause system instability if taken too far.</p>
-<p>Edit <code>/boot/config.txt</code>:
+<p>Edit <code>/boot/firmware/config.txt</code>:
 <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
 <span class="normal"><a href="#__codelineno-13-2">2</a></span>
 <span class="normal"><a href="#__codelineno-13-3">3</a></span>
@@ -1555,7 +1543,7 @@
 <a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="c1"># Disable display</span>
 <a id="__codelineno-14-6" name="__codelineno-14-6"></a>sudo<span class="w"> </span>/usr/bin/tvservice<span class="w"> </span>-o
 <a id="__codelineno-14-7" name="__codelineno-14-7"></a>
-<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="c1"># Edit /boot/config.txt for:</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="c1"># Edit /boot/firmware/config.txt for:</span>
 <a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="c1"># - gpu_mem=16</span>
 <a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="c1"># - disable-bt</span>
 <a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="c1"># - disable-wifi (if using Ethernet)</span>

@@ -1054,18 +1054,6 @@
         <span class="md-tag">bookworm</span>
       
     
-      
-      
-      
-        <span class="md-tag">performance optimization</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">storage</span>
-      
-    
   </nav>
 
 
@@ -1110,7 +1098,7 @@
 </code></pre></div></td></tr></table></div></p>
 <h3 id="4-modify-boot-configuration">4. Modify Boot Configuration</h3>
 <p>Update the boot parameters to tell the Raspberry Pi to use the external storage for the root filesystem:
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/cmdline.txt
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/cmdline.txt
 </code></pre></div></td></tr></table></div>
 Change the <code>root=</code> parameter to point to your USB device, e.g., <code>root=/dev/sdX1</code>.</p>
 <h3 id="5-reboot-the-raspberry-pi">5. Reboot the Raspberry Pi</h3>
@@ -1129,7 +1117,7 @@ Change the <code>root=</code> parameter to point to your USB device, e.g., <code
 <p>If your Raspberry Pi fails to boot:</p>
 <ol>
 <li>Remove the SD card and connect it to another computer</li>
-<li>Edit <code>/boot/cmdline.txt</code> to revert the root parameter to the original SD card partition</li>
+<li>Edit <code>/boot/firmware/cmdline.txt</code> to revert the root parameter to the original SD card partition</li>
 <li>Reinsert the SD card and boot the Raspberry Pi to try again</li>
 </ol>
 <h2 id="conclusion">Conclusion</h2>

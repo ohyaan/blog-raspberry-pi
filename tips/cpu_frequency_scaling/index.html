@@ -925,12 +925,6 @@
       
       
       
-        <span class="md-tag">CPU optimization</span>
-      
-    
-      
-      
-      
         <span class="md-tag">Raspberry Pi OS</span>
       
     
@@ -938,12 +932,6 @@
       
       
         <span class="md-tag">bookworm</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">power management</span>
       
     
   </nav>
@@ -955,7 +943,7 @@
 <p>CPU frequency scaling is a power management technique that adjusts the operating frequency of a processor based on system demands. On Raspberry Pi OS, the default configuration sets the CPU frequency to a fixed 700MHz, which provides consistent performance but may consume more power than necessary during periods of low activity.</p>
 <p>By implementing dynamic frequency scaling, you can optimize your Raspberry Pi's power consumption and heat generation while still maintaining responsive performance when needed. This is particularly valuable for battery-powered projects, headless servers, and use cases where maximum processing power is only occasionally required.</p>
 <h2 id="gpu-configuration">GPU Configuration</h2>
-<p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well. Add the following lines:</p>
+<p><code>/boot/firmware/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well. Add the following lines:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -1034,7 +1022,7 @@
 <a id="__codelineno-6-10" name="__codelineno-6-10"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 </code></pre></div></td></tr></table></div>
 <h2 id="conclusion">Conclusion</h2>
-<p>CPU frequency scaling offers an effective way to balance performance and power consumption on your Raspberry Pi. By configuring both the GPU settings in <code>/boot/config.txt</code> and the Linux kernel's frequency governor, you can create a system that efficiently adapts to varying workloads.</p>
+<p>CPU frequency scaling offers an effective way to balance performance and power consumption on your Raspberry Pi. By configuring both the GPU settings in <code>/boot/firmware/config.txt</code> and the Linux kernel's frequency governor, you can create a system that efficiently adapts to varying workloads.</p>
 <p>While the power savings from frequency scaling may be modest compared to more aggressive power management techniques like disabling unused hardware components, it provides an excellent compromise that preserves functionality while reducing energy usage during idle periods. This approach is particularly beneficial for always-on systems or projects where consistent but not maximum performance is required.</p>
 <p>For optimal results, consider combining CPU frequency scaling with other power management strategies outlined in the Power Saving guide. This comprehensive approach will maximize efficiency while ensuring your Raspberry Pi performs reliably for your specific use case.</p>
 

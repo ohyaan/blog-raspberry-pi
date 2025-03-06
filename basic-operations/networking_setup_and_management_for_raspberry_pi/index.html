@@ -2206,8 +2206,8 @@
 <p>The Raspberry Pi Zero can be connected via USB for both power and networking:</p>
 <ol>
 <li>
-<p>Edit <code>/boot/config.txt</code>:
-   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
+<p>Edit <code>/boot/firmware/config.txt</code>:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/config.txt
 </code></pre></div></td></tr></table></div></p>
 </li>
 <li>
@@ -2216,8 +2216,8 @@
 </code></pre></div></td></tr></table></div></p>
 </li>
 <li>
-<p>Edit <code>/boot/cmdline.txt</code>:
-   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/cmdline.txt
+<p>Edit <code>/boot/firmware/cmdline.txt</code>:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/firmware/cmdline.txt
 </code></pre></div></td></tr></table></div></p>
 </li>
 <li>
@@ -2394,7 +2394,7 @@
 <a id="__codelineno-32-6" name="__codelineno-32-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>vncserver-x11-serviced
 <a id="__codelineno-32-7" name="__codelineno-32-7"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>vncserver-x11-serviced
 </code></pre></div></td></tr></table></div>
-<p>For headless systems (no monitor attached), add to <code>/boot/config.txt</code>:</p>
+<p>For headless systems (no monitor attached), add to <code>/boot/firmware/config.txt</code>:</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
 <span class="normal"><a href="#__codelineno-33-2">2</a></span>
 <span class="normal"><a href="#__codelineno-33-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a>hdmi_force_hotplug=1
@@ -2776,7 +2776,7 @@
 <span class="normal"><a href="#__codelineno-62-5">5</a></span>
 <span class="normal"><a href="#__codelineno-62-6">6</a></span>
 <span class="normal"><a href="#__codelineno-62-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1"></a><span class="c1"># Disable IPv6</span>
-<a id="__codelineno-62-2" name="__codelineno-62-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ipv6.disable=1&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/boot/cmdline.txt
+<a id="__codelineno-62-2" name="__codelineno-62-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ipv6.disable=1&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/boot/firmware/cmdline.txt
 <a id="__codelineno-62-3" name="__codelineno-62-3"></a>
 <a id="__codelineno-62-4" name="__codelineno-62-4"></a><span class="c1"># OR configure static IPv6 in /etc/dhcpcd.conf</span>
 <a id="__codelineno-62-5" name="__codelineno-62-5"></a>interface<span class="w"> </span>eth0
