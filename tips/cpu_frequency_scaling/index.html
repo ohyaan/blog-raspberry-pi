@@ -643,7 +643,7 @@
         
   
   <span class="md-ellipsis">
-    How to move rootfs to external USB storage
+    How to Move Rootfs to External USB Storage
     
   </span>
   
@@ -731,6 +731,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gpu-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       GPU Configuration
@@ -743,6 +752,24 @@
   <a href="#linux-kernel-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Linux Kernel Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-cpu-frequency-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring CPU Frequency Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -835,6 +862,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gpu-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       GPU Configuration
@@ -847,6 +883,24 @@
   <a href="#linux-kernel-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Linux Kernel Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-cpu-frequency-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring CPU Frequency Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -871,6 +925,12 @@
       
       
       
+        <span class="md-tag">CPU optimization</span>
+      
+    
+      
+      
+      
         <span class="md-tag">Raspberry Pi OS</span>
       
     
@@ -880,13 +940,20 @@
         <span class="md-tag">bookworm</span>
       
     
+      
+      
+      
+        <span class="md-tag">power management</span>
+      
+    
   </nav>
 
 
 
 <h1 id="cpu-frequency-scaling">CPU Frequency Scaling</h1>
-<p>Raspberry Pi OS, by default, sets the CPU frequency to a fixed 700MHz. For use cases where maximum CPU power is not always needed, reducing the CPU frequency can be reasonable.</p>
-<p>The following steps describe how to lower the CPU frequency during idle times. (This may have limited effects, so consider it an exploration of technical interest.)</p>
+<h2 id="introduction">Introduction</h2>
+<p>CPU frequency scaling is a power management technique that adjusts the operating frequency of a processor based on system demands. On Raspberry Pi OS, the default configuration sets the CPU frequency to a fixed 700MHz, which provides consistent performance but may consume more power than necessary during periods of low activity.</p>
+<p>By implementing dynamic frequency scaling, you can optimize your Raspberry Pi's power consumption and heat generation while still maintaining responsive performance when needed. This is particularly valuable for battery-powered projects, headless servers, and use cases where maximum processing power is only occasionally required.</p>
 <h2 id="gpu-configuration">GPU Configuration</h2>
 <p><code>/boot/config.txt</code> is read by the GPU before the CPU starts up, and it contains settings for CPU frequency as well. Add the following lines:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
@@ -898,7 +965,7 @@
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nv">arm_freq_min</span><span class="o">=</span><span class="m">100</span>
 </code></pre></div></td></tr></table></div>
 <p>A reboot is required for these changes to take effect.</p>
-<p>For more details, refer to:
+<p>For comprehensive information about GPU and CPU configuration options, the official documentation is available at:
 <a href="http://elinux.org/RPiconfig">RPiconfig - eLinux.org</a></p>
 <h2 id="linux-kernel-configuration">Linux Kernel Configuration</h2>
 <p>By modifying the GPU settings, the CPU gains frequency scaling capabilities. However, the Linux kernel has its own control mechanisms, which by default lock the CPU frequency at 100MHz.</p>
@@ -944,8 +1011,32 @@
 </ul>
 </li>
 </ol>
-<p>After these settings are applied, you should observe CPU frequency changes based on system load.
-Give it a try!</p>
+<h2 id="monitoring-cpu-frequency-changes">Monitoring CPU Frequency Changes</h2>
+<p>After implementing these settings, you can monitor the CPU frequency changes in real-time to observe how your Raspberry Pi adapts to different workloads:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># Watch CPU frequency in real-time</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1"># Or create a simple load test to see frequency scaling in action</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="c1"># Install stress tool if not already available</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>stress
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="c1"># Run a stress test in one terminal</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a>stress<span class="w"> </span>--cpu<span class="w"> </span><span class="m">4</span><span class="w"> </span>--timeout<span class="w"> </span><span class="m">30</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="c1"># While monitoring frequency in another terminal</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+</code></pre></div></td></tr></table></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>CPU frequency scaling offers an effective way to balance performance and power consumption on your Raspberry Pi. By configuring both the GPU settings in <code>/boot/config.txt</code> and the Linux kernel's frequency governor, you can create a system that efficiently adapts to varying workloads.</p>
+<p>While the power savings from frequency scaling may be modest compared to more aggressive power management techniques like disabling unused hardware components, it provides an excellent compromise that preserves functionality while reducing energy usage during idle periods. This approach is particularly beneficial for always-on systems or projects where consistent but not maximum performance is required.</p>
+<p>For optimal results, consider combining CPU frequency scaling with other power management strategies outlined in the Power Saving guide. This comprehensive approach will maximize efficiency while ensuring your Raspberry Pi performs reliably for your specific use case.</p>
 
 
 
