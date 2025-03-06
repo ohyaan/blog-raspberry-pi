@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../../getting-started/hardware_setup/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../networking_setup_and_management/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>With Raspberry Pi</title>
+        <title>Essential Linux Commands - With Raspberry Pi</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -41,7 +45,7 @@
     
       <link rel="stylesheet" href="/stylesheets/custom.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#essential-linux-commands" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -95,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Essential Linux Commands
             
           </span>
         </div>
@@ -133,7 +142,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -197,7 +206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/introduction_to_raspberry_pi/" class="md-nav__link">
+      <a href="../../getting-started/introduction_to_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -219,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/initial_setup_guide/" class="md-nav__link">
+      <a href="../../getting-started/initial_setup_guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -241,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/hardware_setup/" class="md-nav__link">
+      <a href="../../getting-started/hardware_setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -267,8 +276,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -281,13 +292,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -302,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Basic Operations
@@ -313,10 +322,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/basic-operations/essential_linux_commands/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Essential Linux Commands
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -326,6 +356,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -338,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/basic-operations/networking_setup_and_management/" class="md-nav__link">
+      <a href="../networking_setup_and_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/basic-operations/system_settings_configuration/" class="md-nav__link">
+      <a href="../system_settings_configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -433,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/troubleshooting/frequently_asked_questions/" class="md-nav__link">
+      <a href="../../troubleshooting/frequently_asked_questions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -455,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/troubleshooting/common_issues_and_solutions/" class="md-nav__link">
+      <a href="../../troubleshooting/common_issues_and_solutions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/usb_ethernet_gadget_setup/" class="md-nav__link">
+      <a href="../../tips/usb_ethernet_gadget_setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -564,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/power_saving_on_raspberry_pi_os/" class="md-nav__link">
+      <a href="../../tips/power_saving_on_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/static_ip_configuration_on_raspberry_pi_os/" class="md-nav__link">
+      <a href="../../tips/static_ip_configuration_on_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/optimizing_swap_with_zram_on_raspberry_pi_os/" class="md-nav__link">
+      <a href="../../tips/optimizing_swap_with_zram_on_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
+      <a href="../../tips/how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -652,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/how_to_create_docker_image_of_raspberry_pi_os/" class="md-nav__link">
+      <a href="../../tips/how_to_create_docker_image_of_raspberry_pi_os/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -674,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/cpu_frequency_scaling/" class="md-nav__link">
+      <a href="../../tips/cpu_frequency_scaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/remapping_caps_lock_to_control/" class="md-nav__link">
+      <a href="../../tips/remapping_caps_lock_to_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -718,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tips/fix_issue_of_i2c_on_old_raspberry_pi_models/" class="md-nav__link">
+      <a href="../../tips/fix_issue_of_i2c_on_old_raspberry_pi_models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,6 +834,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -768,8 +882,53 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="essential-linux-commands">Essential Linux Commands</h1>
+<h2 id="basic-navigation">Basic Navigation</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">pwd</span><span class="w">     </span><span class="c1"># Print working directory</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>ls<span class="w">      </span><span class="c1"># List files and directories</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nb">cd</span><span class="w">      </span><span class="c1"># Change directory</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="file-operations">File Operations</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>touch<span class="w"> </span>file.txt<span class="w">    </span><span class="c1"># Create empty file</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>mkdir<span class="w"> </span>folder<span class="w">      </span><span class="c1"># Create directory</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>cp<span class="w"> </span>file1<span class="w"> </span>file2<span class="w">    </span><span class="c1"># Copy files</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>mv<span class="w"> </span>file1<span class="w"> </span>file2<span class="w">    </span><span class="c1"># Move/rename files</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>rm<span class="w"> </span>file<span class="w">          </span><span class="c1"># Remove file</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>rm<span class="w"> </span>-r<span class="w"> </span>folder<span class="w">     </span><span class="c1"># Remove directory</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="system-information">System Information</h2>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>top<span class="w">              </span><span class="c1"># System monitor</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>df<span class="w"> </span>-h<span class="w">           </span><span class="c1"># Disk space usage</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>free<span class="w"> </span>-h<span class="w">         </span><span class="c1"># Memory usage</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>vcgencmd<span class="w"> </span>measure_temp<span class="w">  </span><span class="c1"># CPU temperature</span>
+</code></pre></div></td></tr></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -803,10 +962,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
