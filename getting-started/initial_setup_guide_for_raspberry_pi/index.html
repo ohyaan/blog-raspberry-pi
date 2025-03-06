@@ -1308,23 +1308,25 @@
 <h3 id="method-1-using-raspberry-pi-imager-recommended">Method 1: Using Raspberry Pi Imager (Recommended)</h3>
 <p>The Raspberry Pi Imager is the easiest way to install an operating system on your microSD card.</p>
 <ol>
-<li><strong>Download Raspberry Pi Imager</strong></li>
-<li>Visit the <a href="https://www.raspberrypi.com/software/">official website</a></li>
 <li>
-<p>Download and install the appropriate version for your computer</p>
+<p><strong>Download Raspberry Pi Imager</strong></p>
+<ul>
+<li>Visit the <a href="https://www.raspberrypi.com/software/">official website</a></li>
+<li>Download and install the appropriate version for your computer</li>
+</ul>
 </li>
 <li>
 <p><strong>Install Raspberry Pi Imager</strong></p>
-</li>
+<ul>
 <li>On Windows/Mac: Run the installer</li>
-<li>
-<p>On Linux (Debian/Ubuntu):
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rpi-imager
-</code></pre></div></td></tr></table></div></p>
+<li>On Linux (Debian/Ubuntu):
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rpi-imager
+</code></pre></div></td></tr></table></div></li>
+</ul>
 </li>
 <li>
 <p><strong>Write the OS to SD Card</strong></p>
-</li>
+<ul>
 <li>Insert your microSD card into your computer</li>
 <li>Launch Raspberry Pi Imager</li>
 <li>Click "Choose OS" and select your preferred Raspberry Pi OS version</li>
@@ -1339,35 +1341,39 @@
 </li>
 <li>Click "Write" and wait for the process to complete</li>
 <li>Remove the SD card when prompted</li>
+</ul>
+</li>
 </ol>
 <h3 id="method-2-manual-image-download-and-installation">Method 2: Manual Image Download and Installation</h3>
 <p>If you prefer to download the OS image directly:</p>
 <ol>
-<li><strong>Download OS Image</strong></li>
-<li>Visit <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS Downloads</a></li>
 <li>
-<p>Download your preferred OS version</p>
+<p><strong>Download OS Image</strong></p>
+<ul>
+<li>Visit <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS Downloads</a></li>
+<li>Download your preferred OS version</li>
+</ul>
 </li>
 <li>
 <p><strong>Write Image to SD Card</strong></p>
-</li>
+<ul>
 <li><strong>On Windows</strong>: Use <a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a> or <a href="https://www.balena.io/etcher/">balenaEtcher</a></li>
 <li><strong>On macOS</strong>: Use <a href="https://www.balena.io/etcher/">balenaEtcher</a> or <code>dd</code> command in Terminal</li>
-<li>
-<p><strong>On Linux</strong>: Use <a href="https://www.balena.io/etcher/">balenaEtcher</a> or <code>dd</code> command:
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<li><strong>On Linux</strong>: Use <a href="https://www.balena.io/etcher/">balenaEtcher</a> or <code>dd</code> command:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Replace sdX with your SD card device (e.g., sdb)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># BE VERY CAREFUL with this command, as selecting the wrong device can erase your hard drive</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a>sudo<span class="w"> </span>dd<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>4M<span class="w"> </span><span class="k">if</span><span class="o">=</span>path/to/image.img<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/sdX<span class="w"> </span><span class="nv">status</span><span class="o">=</span>progress<span class="w"> </span><span class="nv">conv</span><span class="o">=</span>fsync
-</code></pre></div></td></tr></table></div></p>
+</code></pre></div></td></tr></table></div></li>
+</ul>
 </li>
 <li>
 <p><strong>Configure for Headless Setup (Optional)</strong></p>
-</li>
+<ul>
 <li><strong>Enable SSH</strong>: Create an empty file named <code>ssh</code> (no extension) in the boot partition</li>
 <li><strong>Configure Wi-Fi</strong>: Create a file named <code>wpa_supplicant.conf</code> in the boot partition with:
-     <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+   <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
 <span class="normal"><a href="#__codelineno-2-4">4</a></span>
@@ -1385,6 +1391,8 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a>    key_mgmt=WPA-PSK
 <a id="__codelineno-2-9" name="__codelineno-2-9"></a>}
 </code></pre></div></td></tr></table></div></li>
+</ul>
+</li>
 </ol>
 <h2 id="first-boot-setup">First Boot Setup</h2>
 <h3 id="standard-setup-with-monitor">Standard Setup (With Monitor)</h3>
@@ -1392,31 +1400,35 @@
 <li><strong>Insert the SD card</strong> into your Raspberry Pi</li>
 <li><strong>Connect peripherals</strong>: HDMI display, keyboard, mouse, and power</li>
 <li><strong>Power on</strong> your Raspberry Pi</li>
-<li><strong>Complete the Welcome Wizard</strong>:</li>
+<li><strong>Complete the Welcome Wizard</strong>:<ul>
 <li>Set country, language, and timezone</li>
 <li>Create a user account (or use the default 'pi' user if pre-configured)</li>
 <li>Configure Wi-Fi if not already set</li>
 <li>Update software when prompted</li>
+</ul>
+</li>
 </ol>
 <h3 id="headless-setup-without-monitor">Headless Setup (Without Monitor)</h3>
 <ol>
 <li><strong>Insert the SD card</strong> into your Raspberry Pi</li>
 <li><strong>Connect network</strong>: Either Ethernet cable or pre-configured Wi-Fi</li>
 <li><strong>Power on</strong> your Raspberry Pi</li>
-<li><strong>Find your Pi's IP address</strong> using one of these methods:</li>
+<li>
+<p><strong>Find your Pi's IP address</strong> using one of these methods:</p>
+<ul>
 <li>Check your router's connected devices list</li>
 <li>Use a network scanner like <code>nmap</code>:
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>nmap<span class="w"> </span>-sn<span class="w"> </span><span class="m">192</span>.168.1.0/24<span class="w">  </span><span class="c1"># Adjust to your network range</span>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>nmap<span class="w"> </span>-sn<span class="w"> </span><span class="m">192</span>.168.1.0/24<span class="w">  </span><span class="c1"># Adjust to your network range</span>
 </code></pre></div></td></tr></table></div></li>
-<li>
-<p>Use multicast DNS (if supported): <code>ping raspberrypi.local</code></p>
+<li>Use multicast DNS (if supported): <code>ping raspberrypi.local</code></li>
+</ul>
 </li>
 <li>
 <p><strong>Connect via SSH</strong>:</p>
-</li>
+<ul>
 <li>On Windows: Use PuTTY or Windows Terminal</li>
 <li>On macOS/Linux: Use Terminal
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>ssh<span class="w"> </span>username@raspberrypi.local<span class="w">  </span><span class="c1"># If using mDNS</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1"># OR</span>
@@ -1425,6 +1437,8 @@
 <li>Default credentials (if not customized):<ul>
 <li>Username: <code>pi</code></li>
 <li>Password: <code>raspberry</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
@@ -1538,15 +1552,17 @@
 <h2 id="desktop-environment-customization">Desktop Environment Customization</h2>
 <p>If you're using Raspberry Pi OS with desktop:</p>
 <ol>
-<li><strong>Change Theme</strong>:</li>
 <li>
-<p>Right-click on desktop &gt; Appearance Settings</p>
+<p><strong>Change Theme</strong>:</p>
+<ul>
+<li>Right-click on desktop &gt; Appearance Settings</li>
+</ul>
 </li>
 <li>
 <p><strong>Configure Panels and Menus</strong>:</p>
-</li>
-<li>
-<p>Right-click on panel &gt; Panel Settings</p>
+<ul>
+<li>Right-click on panel &gt; Panel Settings</li>
+</ul>
 </li>
 <li>
 <p><strong>Install Additional Software</strong>:

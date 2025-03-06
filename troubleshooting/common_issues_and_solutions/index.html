@@ -1308,27 +1308,29 @@
 </li>
 <li>
 <p><strong>Re-Flash SD Card:</strong></p>
-</li>
+<ul>
 <li>Use the official <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a></li>
 <li>Select recommended OS</li>
-<li>
-<p>Use "erase" option before writing</p>
+<li>Use "erase" option before writing</li>
+</ul>
 </li>
 <li>
 <p><strong>Try Different SD Card:</strong></p>
-</li>
+<ul>
 <li>Use Class 10 or higher</li>
 <li>Stick to reputable brands (SanDisk, Samsung, Kingston)</li>
-<li>
-<p>16GB or larger recommended</p>
+<li>16GB or larger recommended</li>
+</ul>
 </li>
 <li>
 <p><strong>Check Power Supply:</strong></p>
-</li>
+<ul>
 <li>Use official power supply when possible</li>
 <li>For Pi 4: 5.1V/3A USB-C</li>
 <li>For Pi 3: 5.1V/2.5A micro-USB</li>
 <li>Avoid cheap USB cables</li>
+</ul>
+</li>
 </ol>
 <h3 id="boot-to-rainbow-screen-no-os-load">Boot to Rainbow Screen (No OS Load)</h3>
 <p><strong>Symptoms:</strong>
@@ -1340,11 +1342,13 @@
 2. Try to access the Pi via SSH to determine if OS is running without display</p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Check/Replace HDMI Connection:</strong></li>
+<li>
+<p><strong>Check/Replace HDMI Connection:</strong></p>
+<ul>
 <li>Try different HDMI cable</li>
 <li>For Pi 4, use HDMI0 port (nearest power)</li>
-<li>
-<p>Try different display</p>
+<li>Try different display</li>
+</ul>
 </li>
 <li>
 <p><strong>Force HDMI Configuration:</strong>
@@ -1383,10 +1387,12 @@
 - Garbled text during boot</p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Boot in Recovery Mode:</strong></li>
-<li>Hold SHIFT during boot</li>
 <li>
-<p>Select "Recovery Mode" or similar option</p>
+<p><strong>Boot in Recovery Mode:</strong></p>
+<ul>
+<li>Hold SHIFT during boot</li>
+<li>Select "Recovery Mode" or similar option</li>
+</ul>
 </li>
 <li>
 <p><strong>Fix File System Errors:</strong>
@@ -1404,10 +1410,12 @@
 </li>
 <li>
 <p><strong>Last Resort - Clean Install:</strong></p>
-</li>
+<ul>
 <li>Backup your data</li>
 <li>Re-image SD card</li>
 <li>Restore only essential data</li>
+</ul>
+</li>
 </ol>
 <h2 id="power-issues">Power Issues</h2>
 <h3 id="under-voltage-warning">Under-voltage Warning</h3>
@@ -1437,26 +1445,28 @@
 </code></pre></div></td></tr></table></div></p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Use Proper Power Supply:</strong></li>
+<li>
+<p><strong>Use Proper Power Supply:</strong></p>
+<ul>
 <li>Raspberry Pi 4: Official 5.1V/3A USB-C</li>
 <li>Raspberry Pi 3: 5.1V/2.5A micro-USB</li>
-<li>
-<p>Check power supply rating on label</p>
+<li>Check power supply rating on label</li>
+</ul>
 </li>
 <li>
 <p><strong>Reduce USB Load:</strong></p>
-</li>
+<ul>
 <li>Disconnect power-hungry USB devices</li>
-<li>
-<p>Use powered USB hub for multiple devices</p>
+<li>Use powered USB hub for multiple devices</li>
+</ul>
 </li>
 <li>
 <p><strong>Check/Replace USB Cable:</strong></p>
-</li>
+<ul>
 <li>Use thicker gauge cables</li>
 <li>Keep cable length under 1m</li>
-<li>
-<p>Avoid cheap cables</p>
+<li>Avoid cheap cables</li>
+</ul>
 </li>
 <li>
 <p><strong>Monitor Power Consumption:</strong>
@@ -1496,11 +1506,13 @@
 </code></pre></div></td></tr></table></div></p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Improve Cooling:</strong></li>
+<li>
+<p><strong>Improve Cooling:</strong></p>
+<ul>
 <li>Add heatsinks to CPU, RAM, and USB controller</li>
 <li>Add fan (5V, connect to GPIO pins)</li>
-<li>
-<p>Ensure proper ventilation in case</p>
+<li>Ensure proper ventilation in case</li>
+</ul>
 </li>
 <li>
 <p><strong>Reduce CPU Load:</strong>
@@ -1596,11 +1608,11 @@
 </li>
 <li>
 <p><strong>Check for RF Interference:</strong></p>
-</li>
+<ul>
 <li>Change Wi-Fi channel in router</li>
 <li>Move Raspberry Pi away from other electronic devices</li>
-<li>
-<p>Try 5GHz instead of 2.4GHz if supported</p>
+<li>Try 5GHz instead of 2.4GHz if supported</li>
+</ul>
 </li>
 <li>
 <p><strong>Update Firmware:</strong>
@@ -1731,10 +1743,12 @@
 </li>
 <li>
 <p><strong>Check Cable and Port:</strong></p>
-</li>
+<ul>
 <li>Try different Ethernet cable</li>
 <li>Connect to different router port</li>
 <li>Look for activity LEDs on Ethernet port</li>
+</ul>
+</li>
 </ol>
 <h2 id="storage-issues">Storage Issues</h2>
 <h3 id="running-out-of-space">Running Out of Space</h3>
@@ -1840,10 +1854,10 @@
 </li>
 <li>
 <p><strong>Use Read-Only OS for Critical Applications:</strong></p>
-</li>
+<ul>
 <li>Consider using a read-only file system for mission-critical applications</li>
-<li>
-<p>Look into "overlay" filesystem options</p>
+<li>Look into "overlay" filesystem options</li>
+</ul>
 </li>
 <li>
 <p><strong>Backup Regularly:</strong>
@@ -1934,11 +1948,13 @@
 </code></pre></div></td></tr></table></div></p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Check Wiring:</strong></li>
+<li>
+<p><strong>Check Wiring:</strong></p>
+<ul>
 <li>Ensure correct pin numbering (GPIO vs physical)</li>
 <li>Check for loose connections</li>
-<li>
-<p>Use multimeter to test connections</p>
+<li>Use multimeter to test connections</li>
+</ul>
 </li>
 <li>
 <p><strong>Reset GPIO State:</strong>
@@ -1955,10 +1971,12 @@
 </li>
 <li>
 <p><strong>Check for Pin Damage:</strong></p>
-</li>
+<ul>
 <li>Measure voltage with multimeter</li>
 <li>Try different GPIO pins</li>
 <li>Look for physical damage</li>
+</ul>
+</li>
 </ol>
 <h3 id="usb-devices-not-recognized">USB Devices Not Recognized</h3>
 <p><strong>Symptoms:</strong>
@@ -1978,10 +1996,12 @@
 </code></pre></div></td></tr></table></div></p>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li><strong>Check Power Supply:</strong></li>
-<li>Use higher-rated power supply</li>
 <li>
-<p>Try powered USB hub</p>
+<p><strong>Check Power Supply:</strong></p>
+<ul>
+<li>Use higher-rated power supply</li>
+<li>Try powered USB hub</li>
+</ul>
 </li>
 <li>
 <p><strong>Enable Max USB Current:</strong>
@@ -2012,10 +2032,10 @@
 </li>
 <li>
 <p><strong>Check Hardware Compatibility:</strong></p>
-</li>
+<ul>
 <li>Verify peripherals are compatible with your Pi model</li>
-<li>
-<p>Check <a href="https://elinux.org/RPi_VerifiedPeripherals">Raspberry Pi compatibility list</a></p>
+<li>Check <a href="https://elinux.org/RPi_VerifiedPeripherals">Raspberry Pi compatibility list</a></li>
+</ul>
 </li>
 <li>
 <p><strong>Monitor System Logs:</strong>
@@ -2038,10 +2058,12 @@
 </li>
 <li>
 <p><strong>Community Help:</strong></p>
-</li>
+<ul>
 <li><a href="https://forums.raspberrypi.com/">Raspberry Pi Forums</a></li>
 <li><a href="https://raspberrypi.stackexchange.com/">Raspberry Pi Stack Exchange</a></li>
 <li><a href="https://www.reddit.com/r/raspberry_pi/">Reddit r/raspberry_pi</a></li>
+</ul>
+</li>
 </ol>
 <p>Remember, most Raspberry Pi issues have been encountered and solved by others in the community. Don't hesitate to search online using specific error messages or symptoms!</p>
 

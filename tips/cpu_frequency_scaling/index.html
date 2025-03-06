@@ -926,19 +926,23 @@
 </code></pre></div></td></tr></table></div>
 <p>To make this setting persist after reboot, there are two options:</p>
 <ol>
-<li><strong>Adding the command to <code>/etc/rc.local</code></strong></li>
 <li>
-<p>This method executes the command after the kernel boots, which may result in a longer boot time.</p>
+<p><strong>Adding the command to <code>/etc/rc.local</code></strong></p>
+<ul>
+<li>This method executes the command after the kernel boots, which may result in a longer boot time.</li>
+</ul>
 </li>
 <li>
 <p><strong>Enabling kernel configuration options:</strong></p>
-</li>
+<ul>
 <li>Enable the following kernel options:
-     <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND
 <a id="__codelineno-5-2" name="__codelineno-5-2"></a>CONFIG_CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 </code></pre></div></td></tr></table></div></li>
 <li>This method requires rebuilding the kernel but ensures full CPU power during boot.</li>
+</ul>
+</li>
 </ol>
 <p>After these settings are applied, you should observe CPU frequency changes based on system load.
 Give it a try!</p>

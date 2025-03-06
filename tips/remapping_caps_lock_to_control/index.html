@@ -942,21 +942,27 @@
 <h3 id="2-modify-the-configuration-to-remap-caps-lock">2. Modify the Configuration to Remap Caps Lock</h3>
 <ul>
 <li>Open <code>~/.config/labwc/environment</code> in a text editor.</li>
-<li>Add the following line to remap Caps Lock to Control:</li>
-</ul>
+<li>
+<p>Add the following line to remap Caps Lock to Control:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">XKB_DEFAULT_OPTIONS</span><span class="o">=</span>ctrl:nocaps
 </code></pre></div></td></tr></table></div>
-<ul>
-<li>To swap Caps Lock and Control, use:</li>
+</li>
 </ul>
+<ul>
+<li>
+<p>To swap Caps Lock and Control, use:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nv">XKB_DEFAULT_OPTIONS</span><span class="o">=</span>ctrl:swapcaps
 </code></pre></div></td></tr></table></div>
+</li>
+</ul>
 <h3 id="3-apply-the-changes">3. Apply the Changes</h3>
 <ul>
-<li>Either log out and log back in, or execute the following command:</li>
-</ul>
+<li>
+<p>Either log out and log back in, or execute the following command:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>labwc<span class="w"> </span>--reconfig
 </code></pre></div></td></tr></table></div>
+</li>
+</ul>
 <p>These steps will configure the Caps Lock key to function as a Control key in labwc.</p>
 
 
