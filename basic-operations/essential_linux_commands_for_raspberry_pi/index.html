@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../networking_setup_and_management/">
+        <link rel="prev" href="../networking_setup_and_management_for_raspberry_pi/">
       
       
         <link rel="next" href="../../troubleshooting/frequently_asked_questions/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>System Settings Configuration - With Raspberry Pi</title>
+        <title>Essential Linux Commands for Raspberry Pi - With Raspberry Pi</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-settings-configuration" class="md-skip">
+        <a href="#essential-linux-commands-for-raspberry-pi" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System Settings Configuration
+              Essential Linux Commands for Raspberry Pi
             
           </span>
         </div>
@@ -228,11 +228,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/initial_setup_guide/" class="md-nav__link">
+      <a href="../../getting-started/hardware_setup_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Initial Setup Guide
+    Hardware Setup for Raspberry Pi
     
   </span>
   
@@ -250,11 +250,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/hardware_setup/" class="md-nav__link">
+      <a href="../../getting-started/initial_setup_guide_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Hardware Setup
+    Initial Setup Guide for Raspberry Pi
     
   </span>
   
@@ -325,11 +325,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../essential_linux_commands/" class="md-nav__link">
+      <a href="../system_settings_configuration_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Essential Linux Commands
+    System Settings Configuration for Raspberry Pi
     
   </span>
   
@@ -347,11 +347,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../networking_setup_and_management/" class="md-nav__link">
+      <a href="../networking_setup_and_management_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Networking Setup and Management
+    Networking Setup and Management for Raspberry Pi
     
   </span>
   
@@ -382,7 +382,7 @@
           
   
   <span class="md-ellipsis">
-    System Settings Configuration
+    Essential Linux Commands for Raspberry Pi
     
   </span>
   
@@ -394,7 +394,7 @@
         
   
   <span class="md-ellipsis">
-    System Settings Configuration
+    Essential Linux Commands for Raspberry Pi
     
   </span>
   
@@ -417,131 +417,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-raspi-config" class="md-nav__link">
+  <a href="#navigation-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Using raspi-config
+      Navigation Commands
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-configuration-tasks" class="md-nav__link">
+  <a href="#file-operations" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Configuration Tasks
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Configuration Tasks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-timezone" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Timezone
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#locale-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Locale Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#audio-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Audio Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#display-resolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Display Resolution
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#memory-split" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory Split
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boot-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boot Configuration
+      File Operations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-maintenance" class="md-nav__link">
+  <a href="#file-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      System Maintenance
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="System Maintenance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating the System
+      File Permissions
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#managing-services" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Managing Services
+      System Information
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-resources" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#package-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring Resources
+      Package Management
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#network-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Editing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-command-line-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Command Line Efficiency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-more" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning More
+    </span>
+  </a>
   
 </li>
       
@@ -946,131 +898,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-raspi-config" class="md-nav__link">
+  <a href="#navigation-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Using raspi-config
+      Navigation Commands
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-configuration-tasks" class="md-nav__link">
+  <a href="#file-operations" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Configuration Tasks
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Configuration Tasks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-timezone" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Timezone
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#locale-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Locale Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#audio-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Audio Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#display-resolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Display Resolution
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#memory-split" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory Split
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#power-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boot-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boot Configuration
+      File Operations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-maintenance" class="md-nav__link">
+  <a href="#file-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      System Maintenance
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="System Maintenance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating the System
+      File Permissions
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#managing-services" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Managing Services
+      System Information
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-resources" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#package-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring Resources
+      Package Management
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#network-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Editing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-command-line-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Command Line Efficiency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-more" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning More
+    </span>
+  </a>
   
 </li>
       
@@ -1090,175 +994,466 @@
 
 
 
-<h1 id="system-settings-configuration">System Settings Configuration</h1>
-<h2 id="using-raspi-config">Using raspi-config</h2>
-<p>The <code>raspi-config</code> tool is the main configuration utility for Raspberry Pi OS.</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>raspi-config
-</code></pre></div></td></tr></table></div>
-<p>Key settings you can configure:</p>
-<ol>
-<li>System Options</li>
-<li>Password</li>
-<li>Hostname</li>
-<li>Boot options</li>
-<li>Auto login</li>
-<li>Display Options</li>
-<li>Resolution</li>
-<li>Screen blanking</li>
-<li>Interface Options</li>
-<li>SSH</li>
-<li>VNC</li>
-<li>I2C</li>
-<li>SPI</li>
-<li>Serial Port</li>
-<li>Performance Options</li>
-<li>Overclock</li>
-<li>GPU Memory</li>
-</ol>
-<h2 id="common-configuration-tasks">Common Configuration Tasks</h2>
-<h3 id="setting-timezone">Setting Timezone</h3>
+<h1 id="essential-linux-commands-for-raspberry-pi">Essential Linux Commands for Raspberry Pi</h1>
+<p>The Raspberry Pi runs on Linux-based operating systems, primarily Raspberry Pi OS (formerly Raspbian). Understanding essential Linux commands will help you navigate, manage files, install software, and troubleshoot your Raspberry Pi effectively. This guide covers the most important commands you'll need for daily operations.</p>
+<h2 id="navigation-commands">Navigation Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pwd</code></td>
+<td>Print working directory - shows your current location</td>
+<td><code>pwd</code> → <code>/home/pi</code></td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>List files and directories in current location</td>
+<td><code>ls</code></td>
+</tr>
+<tr>
+<td><code>ls -l</code></td>
+<td>List files with detailed information (permissions, size, date)</td>
+<td><code>ls -l</code></td>
+</tr>
+<tr>
+<td><code>ls -a</code></td>
+<td>List all files including hidden ones (starting with .)</td>
+<td><code>ls -a</code></td>
+</tr>
+<tr>
+<td><code>ls -la</code></td>
+<td>Combine both detailed and all files options</td>
+<td><code>ls -la</code></td>
+</tr>
+<tr>
+<td><code>cd directory</code></td>
+<td>Change directory - navigate to specified location</td>
+<td><code>cd Documents</code></td>
+</tr>
+<tr>
+<td><code>cd ..</code></td>
+<td>Move up one directory level</td>
+<td><code>cd ..</code></td>
+</tr>
+<tr>
+<td><code>cd ~</code></td>
+<td>Go to home directory</td>
+<td><code>cd ~</code></td>
+</tr>
+<tr>
+<td><code>cd /</code></td>
+<td>Go to root directory</td>
+<td><code>cd /</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example workflow:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Check where you are</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">pwd</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># List files in current directory</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>ls<span class="w"> </span>-la
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Navigate to Documents folder</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nb">cd</span><span class="w"> </span>Documents
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># Verify your new location</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nb">pwd</span>
+</code></pre></div></td></tr></table></div></p>
+<h2 id="file-operations">File Operations</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>touch filename</code></td>
+<td>Create an empty file</td>
+<td><code>touch notes.txt</code></td>
+</tr>
+<tr>
+<td><code>mkdir dirname</code></td>
+<td>Create a new directory</td>
+<td><code>mkdir projects</code></td>
+</tr>
+<tr>
+<td><code>cp source destination</code></td>
+<td>Copy files or directories</td>
+<td><code>cp file.txt backup/</code></td>
+</tr>
+<tr>
+<td><code>cp -r source destination</code></td>
+<td>Copy directories recursively</td>
+<td><code>cp -r projects backup/</code></td>
+</tr>
+<tr>
+<td><code>mv source destination</code></td>
+<td>Move/rename files or directories</td>
+<td><code>mv file.txt newname.txt</code></td>
+</tr>
+<tr>
+<td><code>rm filename</code></td>
+<td>Remove/delete a file</td>
+<td><code>rm unwanted.txt</code></td>
+</tr>
+<tr>
+<td><code>rm -r dirname</code></td>
+<td>Remove a directory and its contents</td>
+<td><code>rm -r oldproject</code></td>
+</tr>
+<tr>
+<td><code>rm -i filename</code></td>
+<td>Interactive removal (asks for confirmation)</td>
+<td><code>rm -i important.txt</code></td>
+</tr>
+<tr>
+<td><code>cat filename</code></td>
+<td>Display file contents</td>
+<td><code>cat config.txt</code></td>
+</tr>
+<tr>
+<td><code>less filename</code></td>
+<td>View file contents with scrolling</td>
+<td><code>less longfile.log</code></td>
+</tr>
+<tr>
+<td><code>head filename</code></td>
+<td>Show first 10 lines of file</td>
+<td><code>head data.csv</code></td>
+</tr>
+<tr>
+<td><code>tail filename</code></td>
+<td>Show last 10 lines of file</td>
+<td><code>tail log.txt</code></td>
+</tr>
+<tr>
+<td><code>tail -f filename</code></td>
+<td>Watch file for changes in real-time</td>
+<td><code>tail -f /var/log/syslog</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example workflow for creating a backup:</strong>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Check current timezone</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>timedatectl
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># Set new timezone</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>sudo<span class="w"> </span>timedatectl<span class="w"> </span>set-timezone<span class="w"> </span>Asia/Tokyo
-</code></pre></div></td></tr></table></div>
-<h3 id="locale-settings">Locale Settings</h3>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Create a backup directory</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>mkdir<span class="w"> </span>~/backup
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># Copy important configuration files</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>~/backup/
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>cp<span class="w"> </span>-r<span class="w"> </span>~/projects<span class="w"> </span>~/backup/
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1"># Verify the backup was created</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>ls<span class="w"> </span>-l<span class="w"> </span>~/backup
+</code></pre></div></td></tr></table></div></p>
+<h2 id="file-permissions">File Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chmod permissions file</code></td>
+<td>Change file permissions</td>
+<td><code>chmod 755 script.sh</code></td>
+</tr>
+<tr>
+<td><code>chmod +x filename</code></td>
+<td>Make a file executable</td>
+<td><code>chmod +x run.sh</code></td>
+</tr>
+<tr>
+<td><code>chown user:group file</code></td>
+<td>Change file owner and group</td>
+<td><code>sudo chown pi:pi myfile.txt</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Understanding permissions numbers:</strong>
+- First digit: Owner permissions (read=4, write=2, execute=1)
+- Second digit: Group permissions
+- Third digit: Everyone else</p>
+<p>For example, <code>chmod 755 script.sh</code> gives:
+- Owner: read(4) + write(2) + execute(1) = 7
+- Group: read(4) + execute(1) = 5
+- Others: read(4) + execute(1) = 5</p>
+<h2 id="system-information">System Information</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>top</code></td>
+<td>Show real-time system processes</td>
+<td><code>top</code></td>
+</tr>
+<tr>
+<td><code>htop</code></td>
+<td>Enhanced version of top (may need installation)</td>
+<td><code>htop</code></td>
+</tr>
+<tr>
+<td><code>df -h</code></td>
+<td>Show disk space usage in human-readable format</td>
+<td><code>df -h</code></td>
+</tr>
+<tr>
+<td><code>free -h</code></td>
+<td>Display memory usage</td>
+<td><code>free -h</code></td>
+</tr>
+<tr>
+<td><code>vcgencmd measure_temp</code></td>
+<td>Show CPU temperature</td>
+<td><code>vcgencmd measure_temp</code></td>
+</tr>
+<tr>
+<td><code>cat /proc/cpuinfo</code></td>
+<td>Display CPU information</td>
+<td><code>cat /proc/cpuinfo</code></td>
+</tr>
+<tr>
+<td><code>uptime</code></td>
+<td>Show how long system has been running</td>
+<td><code>uptime</code></td>
+</tr>
+<tr>
+<td><code>who</code></td>
+<td>Show who is logged in</td>
+<td><code>who</code></td>
+</tr>
+<tr>
+<td><code>ps aux</code></td>
+<td>List all running processes</td>
+<td><code>ps aux</code></td>
+</tr>
+<tr>
+<td><code>kill PID</code></td>
+<td>Terminate a process by its ID</td>
+<td><code>kill 1234</code></td>
+</tr>
+<tr>
+<td><code>killall process_name</code></td>
+<td>Kill all processes by name</td>
+<td><code>killall chromium</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example for monitoring system:</strong>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
 <span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># View current locale settings</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>locale
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Reconfigure locales</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>locales
-</code></pre></div></td></tr></table></div>
-<h3 id="audio-configuration">Audio Configuration</h3>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Check system temperature</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>vcgencmd<span class="w"> </span>measure_temp
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># See current memory usage</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>free<span class="w"> </span>-h
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># Identify CPU-intensive processes</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>top
+</code></pre></div></td></tr></table></div></p>
+<h2 id="package-management">Package Management</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sudo apt update</code></td>
+<td>Update package lists</td>
+<td><code>sudo apt update</code></td>
+</tr>
+<tr>
+<td><code>sudo apt upgrade</code></td>
+<td>Upgrade all installed packages</td>
+<td><code>sudo apt upgrade</code></td>
+</tr>
+<tr>
+<td><code>sudo apt install package</code></td>
+<td>Install a package</td>
+<td><code>sudo apt install python3-pip</code></td>
+</tr>
+<tr>
+<td><code>sudo apt remove package</code></td>
+<td>Remove a package</td>
+<td><code>sudo apt remove unwanted-pkg</code></td>
+</tr>
+<tr>
+<td><code>sudo apt autoremove</code></td>
+<td>Remove unneeded dependencies</td>
+<td><code>sudo apt autoremove</code></td>
+</tr>
+<tr>
+<td><code>dpkg -l</code></td>
+<td>List all installed packages</td>
+<td><code>dpkg -l</code></td>
+</tr>
+<tr>
+<td><code>apt search keyword</code></td>
+<td>Search for packages</td>
+<td><code>apt search python</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example update workflow:</strong>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># List audio devices</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>aplay<span class="w"> </span>-l
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># Set default audio output (0=auto, 1=3.5mm jack, 2=HDMI)</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>sudo<span class="w"> </span>amixer<span class="w"> </span>cset<span class="w"> </span><span class="nv">numid</span><span class="o">=</span><span class="m">3</span><span class="w"> </span>&lt;n&gt;
-</code></pre></div></td></tr></table></div>
-<h3 id="display-resolution">Display Resolution</h3>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Update package lists</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="c1"># Upgrade all packages</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1"># Clean up unnecessary packages</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove
+</code></pre></div></td></tr></table></div></p>
+<h2 id="network-commands">Network Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ifconfig</code></td>
+<td>Show network interfaces</td>
+<td><code>ifconfig</code></td>
+</tr>
+<tr>
+<td><code>ip addr</code></td>
+<td>Modern alternative to ifconfig</td>
+<td><code>ip addr</code></td>
+</tr>
+<tr>
+<td><code>ping host</code></td>
+<td>Test connectivity to a host</td>
+<td><code>ping google.com</code></td>
+</tr>
+<tr>
+<td><code>nmap IP</code></td>
+<td>Scan network ports (may need installation)</td>
+<td><code>nmap 192.168.1.1</code></td>
+</tr>
+<tr>
+<td><code>netstat -tuln</code></td>
+<td>Show listening ports</td>
+<td><code>netstat -tuln</code></td>
+</tr>
+<tr>
+<td><code>ssh user@host</code></td>
+<td>Connect to remote system via SSH</td>
+<td><code>ssh pi@192.168.1.5</code></td>
+</tr>
+<tr>
+<td><code>scp file user@host:path</code></td>
+<td>Securely copy files between systems</td>
+<td><code>scp data.txt pi@192.168.1.5:~/</code></td>
+</tr>
+<tr>
+<td><code>wget URL</code></td>
+<td>Download files from the web</td>
+<td><code>wget https://example.com/file.zip</code></td>
+</tr>
+<tr>
+<td><code>curl URL</code></td>
+<td>Transfer data from/to servers</td>
+<td><code>curl https://api.weather.com</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example for checking network:</strong>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">4</a></span>
 <span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># View current resolution</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>tvservice<span class="w"> </span>-s
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># List available modes</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>tvservice<span class="w"> </span>-m<span class="w"> </span>CEA
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>tvservice<span class="w"> </span>-m<span class="w"> </span>DMT
-</code></pre></div></td></tr></table></div>
-<h3 id="memory-split">Memory Split</h3>
-<p>Edit <code>/boot/config.txt</code> to adjust GPU memory:</p>
-<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># Allocate 128MB to GPU</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="na">gpu_mem</span><span class="o">=</span><span class="s">128</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="power-management">Power Management</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span>
-<span class="normal"><a href="#__codelineno-6-6">6</a></span>
-<span class="normal"><a href="#__codelineno-6-7">7</a></span>
-<span class="normal"><a href="#__codelineno-6-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># View CPU frequency</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>vcgencmd<span class="w"> </span>measure_clock<span class="w"> </span>arm
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1"># View CPU temperature</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a>vcgencmd<span class="w"> </span>measure_temp
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="c1"># View throttling status</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8"></a>vcgencmd<span class="w"> </span>get_throttled
-</code></pre></div></td></tr></table></div>
-<h2 id="boot-configuration">Boot Configuration</h2>
-<p>The main boot configuration file is <code>/boot/config.txt</code>. Common settings:</p>
-<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-7-10">10</a></span>
-<span class="normal"><a href="#__codelineno-7-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># Disable WiFi</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">disable-wifi</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="c1"># Disable Bluetooth</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">disable-bt</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># Enable I2C</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">i2c_arm=on</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="c1"># Enable SPI</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">spi=on</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="system-maintenance">System Maintenance</h2>
-<h3 id="updating-the-system">Updating the System</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span>
-<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># Update package list and upgrade system</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="c1"># Update firmware</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6"></a>sudo<span class="w"> </span>rpi-update
-</code></pre></div></td></tr></table></div>
-<h3 id="managing-services">Managing Services</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span>
-<span class="normal"><a href="#__codelineno-9-7">7</a></span>
-<span class="normal"><a href="#__codelineno-9-8">8</a></span>
-<span class="normal"><a href="#__codelineno-9-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1"># List all services</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>systemctl<span class="w"> </span>list-units<span class="w"> </span>--type<span class="o">=</span>service
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="c1"># Check service status</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>&lt;service-name&gt;
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c1"># Enable/disable service at boot</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>&lt;service-name&gt;
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>&lt;service-name&gt;
-</code></pre></div></td></tr></table></div>
-<h3 id="monitoring-resources">Monitoring Resources</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span>
-<span class="normal"><a href="#__codelineno-10-3">3</a></span>
-<span class="normal"><a href="#__codelineno-10-4">4</a></span>
-<span class="normal"><a href="#__codelineno-10-5">5</a></span>
-<span class="normal"><a href="#__codelineno-10-6">6</a></span>
-<span class="normal"><a href="#__codelineno-10-7">7</a></span>
-<span class="normal"><a href="#__codelineno-10-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># Install monitoring tools</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>htop<span class="w"> </span>iotop
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="c1"># Monitor system resources</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a>htop
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="c1"># Monitor disk I/O</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a>sudo<span class="w"> </span>iotop
-</code></pre></div></td></tr></table></div>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># Check your IP address</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>ip<span class="w"> </span>addr
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1"># Test internet connectivity</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>google.com
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># See what services are listening on your system</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>netstat<span class="w"> </span>-tuln
+</code></pre></div></td></tr></table></div></p>
+<h2 id="text-editing">Text Editing</h2>
+<p>While not commands per se, knowing a text editor is essential:</p>
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>Description</th>
+<th>How to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nano</code></td>
+<td>Simple, beginner-friendly editor</td>
+<td><code>nano filename.txt</code></td>
+</tr>
+<tr>
+<td><code>vim</code></td>
+<td>Powerful, keyboard-driven editor</td>
+<td><code>vim filename.txt</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Basic nano commands:</strong>
+- <code>Ctrl+O</code>: Save file
+- <code>Ctrl+X</code>: Exit editor
+- <code>Ctrl+G</code>: Get help</p>
+<h2 id="tips-for-command-line-efficiency">Tips for Command Line Efficiency</h2>
+<ol>
+<li><strong>Tab completion</strong>: Press Tab to autocomplete commands and filenames</li>
+<li><strong>Command history</strong>: </li>
+<li>Press Up Arrow to cycle through previous commands</li>
+<li><code>history</code> to see all past commands</li>
+<li><code>Ctrl+R</code> to search command history</li>
+<li><strong>Wildcards</strong>: Use <code>*</code> to match multiple files (<code>rm *.tmp</code>)</li>
+<li><strong>Combining commands</strong>: Use <code>&amp;&amp;</code> to run commands in sequence (<code>mkdir test &amp;&amp; cd test</code>)</li>
+<li><strong>Redirecting output</strong>: </li>
+<li><code>command &gt; file.txt</code> - Save output to file</li>
+<li><code>command &gt;&gt; file.txt</code> - Append output to file</li>
+<li><strong>Piping</strong>: Connect commands with <code>|</code> (<code>cat file.txt | grep search_term</code>)</li>
+</ol>
+<h2 id="learning-more">Learning More</h2>
+<ul>
+<li><code>man command</code> - View the manual for any command</li>
+<li><code>command --help</code> - Show brief help information</li>
+</ul>
+<p>Most importantly, don't be afraid to experiment! The command line becomes more intuitive with practice, and it's the most powerful way to control your Raspberry Pi.</p>
 
 
 

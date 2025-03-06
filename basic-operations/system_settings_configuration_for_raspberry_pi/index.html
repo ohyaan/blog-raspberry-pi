@@ -1,0 +1,2959 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../getting-started/initial_setup_guide_for_raspberry_pi/">
+      
+      
+        <link rel="next" href="../networking_setup_and_management_for_raspberry_pi/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>System Settings Configuration for Raspberry Pi - With Raspberry Pi</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="/stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051992210534346"
+     crossorigin="anonymous"></script>
+
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#system-settings-configuration-for-raspberry-pi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="With Raspberry Pi" class="md-header__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            With Raspberry Pi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              System Settings Configuration for Raspberry Pi
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="With Raspberry Pi" class="md-nav__button md-logo" aria-label="With Raspberry Pi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    With Raspberry Pi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/introduction_to_raspberry_pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/hardware_setup_for_raspberry_pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware Setup for Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/initial_setup_guide_for_raspberry_pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial Setup Guide for Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic Operations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Operations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    System Settings Configuration for Raspberry Pi
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    System Settings Configuration for Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-tools-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Tools Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Tools Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command-Line Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphical-configuration-for-desktop-installations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphical Configuration (for Desktop installations)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-raspi-config-the-primary-configuration-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using raspi-config - The Primary Configuration Tool
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using raspi-config - The Primary Configuration Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-raspi-config-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key raspi-config Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-raspi-config-non-interactively" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using raspi-config Non-interactively
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-configuration-tasks-in-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Configuration Tasks in Detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Configuration Tasks in Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostname-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hostname Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static IP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiFi Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-and-audio-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display and Audio Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Display and Audio Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-resolution-and-monitor-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Resolution and Monitor Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-and-locale-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time and Locale Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time and Locale Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Timezone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locale-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locale Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overclocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overclocking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swap Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-system-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing System Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-access-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Access Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote Access Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Server Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up SSH Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC Server Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot-configuration-in-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot Configuration in Detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boot Configuration in Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-boot-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Boot Configuration Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-cmdlinetxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing cmdline.txt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Hardening
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Hardening">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-limited-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Limited User Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password Policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-unused-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Unused Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-environment-configuration-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desktop Environment Configuration (GUI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desktop Environment Configuration (GUI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-configuration-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Configuration Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appearance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appearance Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-monitoring-and-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Monitoring and Maintenance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Monitoring and Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Monitoring Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduled-tasks-with-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduled Tasks with cron
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-configuration-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Configuration Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Configuration Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues and Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues and Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boot-problems-after-configuration-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot Problems After Configuration Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking-issues-after-static-ip-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Issues After Static IP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permission Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-configuration-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Configuration Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Configuration Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-custom-boot-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Custom Boot Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-level-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-Level Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking_setup_and_management_for_raspberry_pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking Setup and Management for Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essential_linux_commands_for_raspberry_pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essential Linux Commands for Raspberry Pi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/frequently_asked_questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frequently Asked Questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/common_issues_and_solutions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Issues and Solutions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tips
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tips
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/usb_ethernet_gadget_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USB Ethernet Gadget Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/power_saving_on_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Saving on Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/static_ip_configuration_on_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static IP Configuration on Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/optimizing_swap_with_zram_on_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimizing Swap with ZRAM on Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/how_to_move_rootfs_to_external_usb_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to move rootfs to external USB storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/how_to_create_docker_image_of_raspberry_pi_os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Create Docker Image of Raspberry Pi OS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/cpu_frequency_scaling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CPU Frequency Scaling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/remapping_caps_lock_to_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remapping Caps Lock to Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/fix_issue_of_i2c_on_old_raspberry_pi_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fix Issue of I2C on Old Raspberry Pi Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-tools-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Tools Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Tools Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command-Line Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphical-configuration-for-desktop-installations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphical Configuration (for Desktop installations)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-raspi-config-the-primary-configuration-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using raspi-config - The Primary Configuration Tool
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using raspi-config - The Primary Configuration Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-raspi-config-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key raspi-config Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-raspi-config-non-interactively" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using raspi-config Non-interactively
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-configuration-tasks-in-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Configuration Tasks in Detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Configuration Tasks in Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostname-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hostname Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static IP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiFi Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-and-audio-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display and Audio Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Display and Audio Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-resolution-and-monitor-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Resolution and Monitor Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-and-locale-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time and Locale Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time and Locale Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Timezone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locale-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locale Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overclocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overclocking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swap Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-system-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing System Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-access-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Access Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote Access Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Server Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up SSH Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vnc-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      VNC Server Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot-configuration-in-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot Configuration in Detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boot Configuration in Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-boot-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Boot Configuration Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-cmdlinetxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing cmdline.txt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Hardening
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Hardening">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-limited-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Limited User Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password Policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-unused-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable Unused Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-environment-configuration-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desktop Environment Configuration (GUI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desktop Environment Configuration (GUI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-configuration-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Configuration Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appearance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appearance Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-monitoring-and-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Monitoring and Maintenance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Monitoring and Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-monitoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Monitoring Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduled-tasks-with-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduled Tasks with cron
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-configuration-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Configuration Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Configuration Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues and Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues and Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boot-problems-after-configuration-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot Problems After Configuration Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking-issues-after-static-ip-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Issues After Static IP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permission Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-configuration-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Configuration Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Configuration Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-custom-boot-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Custom Boot Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-level-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-Level Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="system-settings-configuration-for-raspberry-pi">System Settings Configuration for Raspberry Pi</h1>
+<p>This guide provides comprehensive information about configuring and customizing your Raspberry Pi's system settings. Whether you're optimizing performance, enabling interfaces, or setting up remote access, these instructions will help you tailor your Raspberry Pi to your specific needs.</p>
+<h2 id="configuration-tools-overview">Configuration Tools Overview</h2>
+<p>Raspberry Pi OS provides several methods to adjust system settings:</p>
+<h3 id="command-line-configuration">Command-Line Configuration</h3>
+<ul>
+<li><strong>raspi-config</strong>: Text-based interface for system-wide settings</li>
+<li><strong>Configuration files</strong>: Direct editing of system files in <code>/boot</code> and <code>/etc</code></li>
+<li><strong>Command-line utilities</strong>: Specialized tools for specific settings</li>
+</ul>
+<h3 id="graphical-configuration-for-desktop-installations">Graphical Configuration (for Desktop installations)</h3>
+<ul>
+<li><strong>Raspberry Pi Configuration</strong>: GUI tool in Preferences menu</li>
+<li><strong>Desktop settings panels</strong>: Display, network, and appearance settings</li>
+<li><strong>Third-party configuration utilities</strong>: Additional tools available in repositories</li>
+</ul>
+<h2 id="using-raspi-config-the-primary-configuration-tool">Using raspi-config - The Primary Configuration Tool</h2>
+<p>The <code>raspi-config</code> utility is the central configuration tool for Raspberry Pi systems. It provides a text-based interface to manage most system settings.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>raspi-config
+</code></pre></div></td></tr></table></div>
+<h3 id="key-raspi-config-sections">Key raspi-config Sections</h3>
+<ol>
+<li><strong>System Options</strong></li>
+<li><strong>Password</strong>: Change user password</li>
+<li><strong>Hostname</strong>: Set the network name for your Raspberry Pi</li>
+<li><strong>Boot / Auto Login</strong>: Configure automatic login and boot to CLI or desktop</li>
+<li><strong>Network at Boot</strong>: Wait for network connection during boot</li>
+<li>
+<p><strong>Splash Screen</strong>: Enable/disable boot splash screen</p>
+</li>
+<li>
+<p><strong>Display Options</strong></p>
+</li>
+<li><strong>Resolution</strong>: Set screen resolution</li>
+<li><strong>Screen Blanking</strong>: Enable/disable screen blanking (power saving)</li>
+<li>
+<p><strong>Pixel Doubling</strong>: Scale display for high-resolution screens</p>
+</li>
+<li>
+<p><strong>Interface Options</strong></p>
+</li>
+<li><strong>SSH</strong>: Enable/disable Secure Shell server</li>
+<li><strong>VNC</strong>: Enable/disable Virtual Network Computing server</li>
+<li><strong>SPI</strong>: Enable/disable Serial Peripheral Interface</li>
+<li><strong>I2C</strong>: Enable/disable Inter-Integrated Circuit interface</li>
+<li><strong>Serial Port</strong>: Configure UART serial port</li>
+<li><strong>1-Wire</strong>: Enable/disable 1-Wire interface</li>
+<li>
+<p><strong>Remote GPIO</strong>: Enable/disable remote GPIO access</p>
+</li>
+<li>
+<p><strong>Performance Options</strong></p>
+</li>
+<li><strong>Overclock</strong>: Adjust CPU clock speed (model-dependent)</li>
+<li><strong>GPU Memory</strong>: Allocate memory between CPU and GPU</li>
+<li>
+<p><strong>Overlay File System</strong>: Configure read-only file system</p>
+</li>
+<li>
+<p><strong>Localization Options</strong></p>
+</li>
+<li><strong>Locale</strong>: Set language and regional standards</li>
+<li><strong>Timezone</strong>: Set system time zone</li>
+<li><strong>Keyboard Layout</strong>: Configure keyboard layout</li>
+<li>
+<p><strong>WLAN Country</strong>: Set WiFi regulatory domain</p>
+</li>
+<li>
+<p><strong>Advanced Options</strong></p>
+</li>
+<li><strong>Expand Filesystem</strong>: Ensure SD card storage is fully utilized</li>
+<li><strong>GL Driver</strong>: Select OpenGL driver options</li>
+<li><strong>Audio</strong>: Configure audio output device</li>
+</ol>
+<h3 id="using-raspi-config-non-interactively">Using raspi-config Non-interactively</h3>
+<p>You can also use raspi-config in non-interactive mode for scripting:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># Example: Enable SSH without interactive prompt</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>raspi-config<span class="w"> </span>nonint<span class="w"> </span>do_ssh<span class="w"> </span><span class="m">0</span><span class="w">  </span><span class="c1"># 0 for enable, 1 for disable</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># Example: Set GPU memory to 128MB</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>sudo<span class="w"> </span>raspi-config<span class="w"> </span>nonint<span class="w"> </span>do_memory_split<span class="w"> </span><span class="m">128</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="common-configuration-tasks-in-detail">Common Configuration Tasks in Detail</h2>
+<h3 id="network-configuration">Network Configuration</h3>
+<h4 id="hostname-configuration">Hostname Configuration</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Check current hostname</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>hostname
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Change hostname</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>sudo<span class="w"> </span>hostnamectl<span class="w"> </span>set-hostname<span class="w"> </span>new-hostname
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># Edit hosts file to match</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/hosts
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="c1"># Add/update the line with your new hostname:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="c1"># 127.0.1.1   new-hostname</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="static-ip-configuration">Static IP Configuration</h4>
+<p>Edit <code>/etc/dhcpcd.conf</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/dhcpcd.conf
+</code></pre></div></td></tr></table></div>
+<p>Add the following (adjust values for your network):</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>interface eth0
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>static ip_address=192.168.1.100/24
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>static routers=192.168.1.1
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>static domain_name_servers=1.1.1.1 8.8.8.8
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a># For WiFi configuration (if needed)
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>interface wlan0
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>static ip_address=192.168.1.101/24
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>static routers=192.168.1.1
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>static domain_name_servers=1.1.1.1 8.8.8.8
+</code></pre></div></td></tr></table></div>
+<h4 id="wifi-configuration">WiFi Configuration</h4>
+<p>Edit <code>/etc/wpa_supplicant/wpa_supplicant.conf</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre></div></td></tr></table></div>
+<p>Add your WiFi network:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>country=US  # Replace with your country code
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>update_config=1
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>network={
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a>    ssid=&quot;YourNetworkName&quot;
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a>    psk=&quot;YourPassword&quot;
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a>    key_mgmt=WPA-PSK
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a>    priority=1
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a>}
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a># Add additional networks with different priorities if needed
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a>network={
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a>    ssid=&quot;SecondNetwork&quot;
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a>    psk=&quot;OtherPassword&quot;
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a>    key_mgmt=WPA-PSK
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a>    priority=2  # Higher number = higher priority
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a>}
+</code></pre></div></td></tr></table></div>
+<h3 id="display-and-audio-settings">Display and Audio Settings</h3>
+<h4 id="display-resolution-and-monitor-configuration">Display Resolution and Monitor Configuration</h4>
+<p>Edit <code>/boot/config.txt</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/config.txt
+</code></pre></div></td></tr></table></div>
+<p>Common display settings:</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># Force specific HDMI mode (see https://www.raspberrypi.org/documentation/configuration/config-txt/video.md)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="na">hdmi_group</span><span class="o">=</span><span class="s">1</span><span class="w">  </span><span class="c1"># CEA (TVs) = 1, DMT (monitors) = 2</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="na">hdmi_mode</span><span class="o">=</span><span class="s">16</span><span class="w">  </span><span class="c1"># Mode 16 = 1080p at 60Hz</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="c1"># Force HDMI output even if no HDMI display detected</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="na">hdmi_force_hotplug</span><span class="o">=</span><span class="s">1</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="c1"># Adjust overscan if you see black borders</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="na">disable_overscan</span><span class="o">=</span><span class="s">1</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="c1"># Or set custom overscan values:</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="c1">#overscan_left=24</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="c1">#overscan_right=24</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="c1">#overscan_top=24</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="c1">#overscan_bottom=24</span>
+</code></pre></div></td></tr></table></div>
+<p>To identify available modes:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span>
+<span class="normal"><a href="#__codelineno-9-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1"># List available CEA modes (TVs)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>tvservice<span class="w"> </span>-m<span class="w"> </span>CEA
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="c1"># List available DMT modes (monitors)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>tvservice<span class="w"> </span>-m<span class="w"> </span>DMT
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c1"># Show current state</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a>tvservice<span class="w"> </span>-s
+</code></pre></div></td></tr></table></div>
+<h4 id="audio-configuration">Audio Configuration</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># List available audio devices</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>aplay<span class="w"> </span>-l
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="c1"># Set default audio output</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="c1"># 0 = auto, 1 = 3.5mm jack, 2 = HDMI</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a>sudo<span class="w"> </span>amixer<span class="w"> </span>cset<span class="w"> </span><span class="nv">numid</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="m">2</span>
+</code></pre></div></td></tr></table></div>
+<p>For advanced audio routing, consider using:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># Install PulseAudio volume control</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>pavucontrol
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="c1"># Run the graphical audio control panel</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a>pavucontrol
+</code></pre></div></td></tr></table></div>
+<h3 id="time-and-locale-settings">Time and Locale Settings</h3>
+<h4 id="setting-timezone">Setting Timezone</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span>
+<span class="normal"><a href="#__codelineno-12-7">7</a></span>
+<span class="normal"><a href="#__codelineno-12-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1"># Check current timezone</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>timedatectl
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1"># List available timezones</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>timedatectl<span class="w"> </span>list-timezones<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>asia<span class="w">  </span><span class="c1"># Example: filter for Asia</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="c1"># Set timezone</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a>sudo<span class="w"> </span>timedatectl<span class="w"> </span>set-timezone<span class="w"> </span>Asia/Tokyo
+</code></pre></div></td></tr></table></div>
+<h4 id="locale-settings">Locale Settings</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="c1"># View current locale settings</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>locale
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="c1"># Reconfigure locales through the configuration utility</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>locales
+</code></pre></div></td></tr></table></div>
+<p>To set locales directly:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1"># Example: Enable English (US) and Japanese locales</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a>sudo<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/^# *\(en_US.UTF-8\)/\1/&#39;</span><span class="w"> </span>/etc/locale.gen
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a>sudo<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/^# *\(ja_JP.UTF-8\)/\1/&#39;</span><span class="w"> </span>/etc/locale.gen
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a>sudo<span class="w"> </span>locale-gen
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="c1"># Set default locale</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a>sudo<span class="w"> </span>update-locale<span class="w"> </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+</code></pre></div></td></tr></table></div>
+<h3 id="performance-optimization">Performance Optimization</h3>
+<h4 id="memory-split">Memory Split</h4>
+<p>Adjust GPU memory allocation in <code>/boot/config.txt</code>:</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="c1"># Values typically between 16-512</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="c1"># For headless servers: 16</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="c1"># For desktop use: 128</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="c1"># For gaming/video: 256+</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="na">gpu_mem</span><span class="o">=</span><span class="s">128</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="overclocking">Overclocking</h4>
+<p><strong>Warning</strong>: Overclocking may reduce system stability and lifespan. Always ensure adequate cooling.</p>
+<p>Edit <code>/boot/config.txt</code> (values depend on Pi model):</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span>
+<span class="normal"><a href="#__codelineno-16-6">6</a></span>
+<span class="normal"><a href="#__codelineno-16-7">7</a></span>
+<span class="normal"><a href="#__codelineno-16-8">8</a></span>
+<span class="normal"><a href="#__codelineno-16-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1"># For Raspberry Pi 4:</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="na">over_voltage</span><span class="o">=</span><span class="s">6</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="na">arm_freq</span><span class="o">=</span><span class="s">2000</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="na">gpu_freq</span><span class="o">=</span><span class="s">600</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="c1"># For Raspberry Pi 3:</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="na">over_voltage</span><span class="o">=</span><span class="s">4</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="na">arm_freq</span><span class="o">=</span><span class="s">1350</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="na">gpu_freq</span><span class="o">=</span><span class="s">500</span>
+</code></pre></div></td></tr></table></div>
+<p>Monitor temperature after overclocking:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1"># Watch temperature in real-time</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span>vcgencmd<span class="w"> </span>measure_temp
+</code></pre></div></td></tr></table></div>
+<h4 id="swap-configuration">Swap Configuration</h4>
+<p>Adjust swap size in <code>/etc/dphys-swapfile</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/dphys-swapfile
+</code></pre></div></td></tr></table></div>
+<p>Modify the configuration:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a># Set swap size in MB
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a>CONF_SWAPSIZE=1024
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a># To disable swap altogether:
+<a id="__codelineno-19-5" name="__codelineno-19-5"></a>#CONF_SWAPSIZE=0
+</code></pre></div></td></tr></table></div>
+<p>Apply changes:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>dphys-swapfile
+</code></pre></div></td></tr></table></div>
+<p>Consider <a href="../../tips/optimizing_swap_with_zram_on_raspberry_pi_os/">optimizing swap with ZRAM</a> for better performance.</p>
+<h3 id="managing-system-services">Managing System Services</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-21-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-21-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-21-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-21-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-21-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-21-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-21-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-21-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-21-10">10</a></span>
+<span class="normal"><a href="#__codelineno-21-11">11</a></span>
+<span class="normal"><a href="#__codelineno-21-12">12</a></span>
+<span class="normal"><a href="#__codelineno-21-13">13</a></span>
+<span class="normal"><a href="#__codelineno-21-14">14</a></span>
+<span class="normal"><a href="#__codelineno-21-15">15</a></span>
+<span class="normal"><a href="#__codelineno-21-16">16</a></span>
+<span class="normal"><a href="#__codelineno-21-17">17</a></span>
+<span class="normal"><a href="#__codelineno-21-18">18</a></span>
+<span class="normal"><a href="#__codelineno-21-19">19</a></span>
+<span class="normal"><a href="#__codelineno-21-20">20</a></span>
+<span class="normal"><a href="#__codelineno-21-21">21</a></span>
+<span class="normal"><a href="#__codelineno-21-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="c1"># List all active services</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a>systemctl<span class="w"> </span>list-units<span class="w"> </span>--type<span class="o">=</span>service
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a>
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="c1"># List all services (including inactive)</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a>systemctl<span class="w"> </span>list-units<span class="w"> </span>--type<span class="o">=</span>service<span class="w"> </span>--all
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a>
+<a id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="c1"># Check service status</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8"></a>systemctl<span class="w"> </span>status<span class="w"> </span>service_name
+<a id="__codelineno-21-9" name="__codelineno-21-9"></a>
+<a id="__codelineno-21-10" name="__codelineno-21-10"></a><span class="c1"># Start/stop a service</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>service_name
+<a id="__codelineno-21-12" name="__codelineno-21-12"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>service_name
+<a id="__codelineno-21-13" name="__codelineno-21-13"></a>
+<a id="__codelineno-21-14" name="__codelineno-21-14"></a><span class="c1"># Enable/disable service at boot</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>service_name
+<a id="__codelineno-21-16" name="__codelineno-21-16"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>service_name
+<a id="__codelineno-21-17" name="__codelineno-21-17"></a>
+<a id="__codelineno-21-18" name="__codelineno-21-18"></a><span class="c1"># Restart a service</span>
+<a id="__codelineno-21-19" name="__codelineno-21-19"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>service_name
+<a id="__codelineno-21-20" name="__codelineno-21-20"></a>
+<a id="__codelineno-21-21" name="__codelineno-21-21"></a><span class="c1"># Reload configuration without restarting</span>
+<a id="__codelineno-21-22" name="__codelineno-21-22"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>service_name
+</code></pre></div></td></tr></table></div>
+<p>Common services to manage:</p>
+<ul>
+<li><code>ssh</code>: Secure Shell server</li>
+<li><code>bluetooth</code>: Bluetooth functionality</li>
+<li><code>dhcpcd</code>: DHCP client daemon</li>
+<li><code>networking</code>: Networking services</li>
+<li><code>lightdm</code>: Display manager (for desktop environments)</li>
+</ul>
+<h3 id="remote-access-configuration">Remote Access Configuration</h3>
+<h4 id="ssh-server-configuration">SSH Server Configuration</h4>
+<p>Advanced SSH configuration in <code>/etc/ssh/sshd_config</code>:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/ssh/sshd_config
+</code></pre></div></td></tr></table></div>
+<p>Recommended security settings:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-23-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-23-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-23-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-23-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-23-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-23-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-23-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-23-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-23-10">10</a></span>
+<span class="normal"><a href="#__codelineno-23-11">11</a></span>
+<span class="normal"><a href="#__codelineno-23-12">12</a></span>
+<span class="normal"><a href="#__codelineno-23-13">13</a></span>
+<span class="normal"><a href="#__codelineno-23-14">14</a></span>
+<span class="normal"><a href="#__codelineno-23-15">15</a></span>
+<span class="normal"><a href="#__codelineno-23-16">16</a></span>
+<span class="normal"><a href="#__codelineno-23-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a># Disable root login
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a>PermitRootLogin no
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a># Use SSH protocol 2 only
+<a id="__codelineno-23-5" name="__codelineno-23-5"></a>Protocol 2
+<a id="__codelineno-23-6" name="__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7"></a># Limit authentication attempts
+<a id="__codelineno-23-8" name="__codelineno-23-8"></a>MaxAuthTries 3
+<a id="__codelineno-23-9" name="__codelineno-23-9"></a>
+<a id="__codelineno-23-10" name="__codelineno-23-10"></a># Disable password authentication (use keys only)
+<a id="__codelineno-23-11" name="__codelineno-23-11"></a>PasswordAuthentication no
+<a id="__codelineno-23-12" name="__codelineno-23-12"></a>
+<a id="__codelineno-23-13" name="__codelineno-23-13"></a># Allow only specific users
+<a id="__codelineno-23-14" name="__codelineno-23-14"></a>AllowUsers username1 username2
+<a id="__codelineno-23-15" name="__codelineno-23-15"></a>
+<a id="__codelineno-23-16" name="__codelineno-23-16"></a># Change default port (adds security by obscurity)
+<a id="__codelineno-23-17" name="__codelineno-23-17"></a>Port 2222
+</code></pre></div></td></tr></table></div>
+<p>After changes:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>ssh
+</code></pre></div></td></tr></table></div>
+<h4 id="setting-up-ssh-keys">Setting Up SSH Keys</h4>
+<p>On your local machine:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span>
+<span class="normal"><a href="#__codelineno-25-5">5</a></span>
+<span class="normal"><a href="#__codelineno-25-6">6</a></span>
+<span class="normal"><a href="#__codelineno-25-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="c1"># Generate key pair</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="c1"># Copy public key to Raspberry Pi</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5"></a>ssh-copy-id<span class="w"> </span>username@raspberrypi.local
+<a id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="c1"># Or for custom port:</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7"></a>ssh-copy-id<span class="w"> </span>-p<span class="w"> </span><span class="m">2222</span><span class="w"> </span>username@raspberrypi.local
+</code></pre></div></td></tr></table></div>
+<h4 id="vnc-server-configuration">VNC Server Configuration</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span>
+<span class="normal"><a href="#__codelineno-26-4">4</a></span>
+<span class="normal"><a href="#__codelineno-26-5">5</a></span>
+<span class="normal"><a href="#__codelineno-26-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="c1"># Install if not already present</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>realvnc-vnc-server
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a>
+<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="c1"># Enable service</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>vncserver-x11-serviced
+<a id="__codelineno-26-6" name="__codelineno-26-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>vncserver-x11-serviced
+</code></pre></div></td></tr></table></div>
+<p>Configure VNC through raspi-config:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a>sudo<span class="w"> </span>raspi-config
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="c1"># Navigate to Interface Options &gt; VNC &gt; Enable</span>
+</code></pre></div></td></tr></table></div>
+<p>Advanced VNC settings:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="c1"># Set VNC password</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a>vncpasswd
+<a id="__codelineno-28-3" name="__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="c1"># Configure VNC settings</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5"></a>nano<span class="w"> </span>~/.vnc/config
+</code></pre></div></td></tr></table></div>
+<h2 id="boot-configuration-in-detail">Boot Configuration in Detail</h2>
+<p>The <code>/boot/config.txt</code> file is the primary configuration file for hardware settings. It's similar to BIOS on traditional computers.</p>
+<h3 id="common-boot-configuration-options">Common Boot Configuration Options</h3>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-29-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-29-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-29-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-29-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-29-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-29-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-29-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-29-10">10</a></span>
+<span class="normal"><a href="#__codelineno-29-11">11</a></span>
+<span class="normal"><a href="#__codelineno-29-12">12</a></span>
+<span class="normal"><a href="#__codelineno-29-13">13</a></span>
+<span class="normal"><a href="#__codelineno-29-14">14</a></span>
+<span class="normal"><a href="#__codelineno-29-15">15</a></span>
+<span class="normal"><a href="#__codelineno-29-16">16</a></span>
+<span class="normal"><a href="#__codelineno-29-17">17</a></span>
+<span class="normal"><a href="#__codelineno-29-18">18</a></span>
+<span class="normal"><a href="#__codelineno-29-19">19</a></span>
+<span class="normal"><a href="#__codelineno-29-20">20</a></span>
+<span class="normal"><a href="#__codelineno-29-21">21</a></span>
+<span class="normal"><a href="#__codelineno-29-22">22</a></span>
+<span class="normal"><a href="#__codelineno-29-23">23</a></span>
+<span class="normal"><a href="#__codelineno-29-24">24</a></span>
+<span class="normal"><a href="#__codelineno-29-25">25</a></span>
+<span class="normal"><a href="#__codelineno-29-26">26</a></span>
+<span class="normal"><a href="#__codelineno-29-27">27</a></span>
+<span class="normal"><a href="#__codelineno-29-28">28</a></span>
+<span class="normal"><a href="#__codelineno-29-29">29</a></span>
+<span class="normal"><a href="#__codelineno-29-30">30</a></span>
+<span class="normal"><a href="#__codelineno-29-31">31</a></span>
+<span class="normal"><a href="#__codelineno-29-32">32</a></span>
+<span class="normal"><a href="#__codelineno-29-33">33</a></span>
+<span class="normal"><a href="#__codelineno-29-34">34</a></span>
+<span class="normal"><a href="#__codelineno-29-35">35</a></span>
+<span class="normal"><a href="#__codelineno-29-36">36</a></span>
+<span class="normal"><a href="#__codelineno-29-37">37</a></span>
+<span class="normal"><a href="#__codelineno-29-38">38</a></span>
+<span class="normal"><a href="#__codelineno-29-39">39</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="c1"># --- System Performance ---</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="c1"># CPU overclocking</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="na">arm_freq</span><span class="o">=</span><span class="s">1800</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4"></a><span class="na">over_voltage</span><span class="o">=</span><span class="s">5</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5"></a>
+<a id="__codelineno-29-6" name="__codelineno-29-6"></a><span class="c1"># --- Interfaces ---</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="c1"># Enable/disable Bluetooth</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">disable-bt</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9"></a>
+<a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="c1"># Enable/disable WiFi</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">disable-wifi</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12"></a>
+<a id="__codelineno-29-13" name="__codelineno-29-13"></a><span class="c1"># Enable/disable onboard audio</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">audio=on</span>
+<a id="__codelineno-29-15" name="__codelineno-29-15"></a>
+<a id="__codelineno-29-16" name="__codelineno-29-16"></a><span class="c1"># Enable/disable interfaces</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">i2c_arm=on</span>
+<a id="__codelineno-29-18" name="__codelineno-29-18"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">spi=on</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19"></a><span class="na">dtparam</span><span class="o">=</span><span class="s">i2s=on</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20"></a>
+<a id="__codelineno-29-21" name="__codelineno-29-21"></a><span class="c1"># --- Display ---</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22"></a><span class="c1"># Set specific display rotation (0, 90, 180, 270)</span>
+<a id="__codelineno-29-23" name="__codelineno-29-23"></a><span class="na">display_rotate</span><span class="o">=</span><span class="s">0</span>
+<a id="__codelineno-29-24" name="__codelineno-29-24"></a>
+<a id="__codelineno-29-25" name="__codelineno-29-25"></a><span class="c1"># Force display resolution</span>
+<a id="__codelineno-29-26" name="__codelineno-29-26"></a><span class="na">hdmi_group</span><span class="o">=</span><span class="s">2</span>
+<a id="__codelineno-29-27" name="__codelineno-29-27"></a><span class="na">hdmi_mode</span><span class="o">=</span><span class="s">82</span><span class="w">  </span><span class="c1"># 1080p at 60Hz</span>
+<a id="__codelineno-29-28" name="__codelineno-29-28"></a>
+<a id="__codelineno-29-29" name="__codelineno-29-29"></a><span class="c1"># --- USB and Power ---</span>
+<a id="__codelineno-29-30" name="__codelineno-29-30"></a><span class="c1"># Increase USB current availability</span>
+<a id="__codelineno-29-31" name="__codelineno-29-31"></a><span class="na">max_usb_current</span><span class="o">=</span><span class="s">1</span>
+<a id="__codelineno-29-32" name="__codelineno-29-32"></a>
+<a id="__codelineno-29-33" name="__codelineno-29-33"></a><span class="c1"># --- Memory ---</span>
+<a id="__codelineno-29-34" name="__codelineno-29-34"></a><span class="c1"># GPU memory allocation</span>
+<a id="__codelineno-29-35" name="__codelineno-29-35"></a><span class="na">gpu_mem</span><span class="o">=</span><span class="s">128</span>
+<a id="__codelineno-29-36" name="__codelineno-29-36"></a>
+<a id="__codelineno-29-37" name="__codelineno-29-37"></a><span class="c1"># --- Custom Overlays ---</span>
+<a id="__codelineno-29-38" name="__codelineno-29-38"></a><span class="c1"># Example: Add GPIO fan control</span>
+<a id="__codelineno-29-39" name="__codelineno-29-39"></a><span class="na">dtoverlay</span><span class="o">=</span><span class="s">gpio-fan,gpiopin=14,temp=60000</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="managing-cmdlinetxt">Managing cmdline.txt</h3>
+<p>The <code>/boot/cmdline.txt</code> file contains kernel boot parameters:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/boot/cmdline.txt
+</code></pre></div></td></tr></table></div>
+<p>Common modifications:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-31-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-31-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-31-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-31-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-31-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-31-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-31-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-31-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-31-10">10</a></span>
+<span class="normal"><a href="#__codelineno-31-11">11</a></span>
+<span class="normal"><a href="#__codelineno-31-12">12</a></span>
+<span class="normal"><a href="#__codelineno-31-13">13</a></span>
+<span class="normal"><a href="#__codelineno-31-14">14</a></span>
+<span class="normal"><a href="#__codelineno-31-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a># Default parameters - DO NOT add line breaks to this file
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a>console=tty1 root=PARTUUID=738a4d67-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash
+<a id="__codelineno-31-3" name="__codelineno-31-3"></a>
+<a id="__codelineno-31-4" name="__codelineno-31-4"></a># Add these parameters as needed:
+<a id="__codelineno-31-5" name="__codelineno-31-5"></a># Disable IPv6
+<a id="__codelineno-31-6" name="__codelineno-31-6"></a>ipv6.disable=1
+<a id="__codelineno-31-7" name="__codelineno-31-7"></a>
+<a id="__codelineno-31-8" name="__codelineno-31-8"></a># Boot with fixed console size
+<a id="__codelineno-31-9" name="__codelineno-31-9"></a>fbcon=map:10 fbcon=font:ProFont6x11
+<a id="__codelineno-31-10" name="__codelineno-31-10"></a>
+<a id="__codelineno-31-11" name="__codelineno-31-11"></a># Enable serial console
+<a id="__codelineno-31-12" name="__codelineno-31-12"></a>console=serial0,115200
+<a id="__codelineno-31-13" name="__codelineno-31-13"></a>
+<a id="__codelineno-31-14" name="__codelineno-31-14"></a># Add kernel parameter for specific hardware
+<a id="__codelineno-31-15" name="__codelineno-31-15"></a>sdhci.debug_quirks2=4
+</code></pre></div></td></tr></table></div>
+<h2 id="security-hardening">Security Hardening</h2>
+<h3 id="firewall-configuration">Firewall Configuration</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-32-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-32-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-32-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-32-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-32-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-32-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-32-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-32-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-32-10">10</a></span>
+<span class="normal"><a href="#__codelineno-32-11">11</a></span>
+<span class="normal"><a href="#__codelineno-32-12">12</a></span>
+<span class="normal"><a href="#__codelineno-32-13">13</a></span>
+<span class="normal"><a href="#__codelineno-32-14">14</a></span>
+<span class="normal"><a href="#__codelineno-32-15">15</a></span>
+<span class="normal"><a href="#__codelineno-32-16">16</a></span>
+<span class="normal"><a href="#__codelineno-32-17">17</a></span>
+<span class="normal"><a href="#__codelineno-32-18">18</a></span>
+<span class="normal"><a href="#__codelineno-32-19">19</a></span>
+<span class="normal"><a href="#__codelineno-32-20">20</a></span>
+<span class="normal"><a href="#__codelineno-32-21">21</a></span>
+<span class="normal"><a href="#__codelineno-32-22">22</a></span>
+<span class="normal"><a href="#__codelineno-32-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="c1"># Install UFW (Uncomplicated Firewall)</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a>
+<a id="__codelineno-32-4" name="__codelineno-32-4"></a><span class="c1"># Set default policies</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>deny<span class="w"> </span>incoming
+<a id="__codelineno-32-6" name="__codelineno-32-6"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>allow<span class="w"> </span>outgoing
+<a id="__codelineno-32-7" name="__codelineno-32-7"></a>
+<a id="__codelineno-32-8" name="__codelineno-32-8"></a><span class="c1"># Allow SSH</span>
+<a id="__codelineno-32-9" name="__codelineno-32-9"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>ssh
+<a id="__codelineno-32-10" name="__codelineno-32-10"></a><span class="c1"># Or if using custom SSH port:</span>
+<a id="__codelineno-32-11" name="__codelineno-32-11"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">2222</span>/tcp
+<a id="__codelineno-32-12" name="__codelineno-32-12"></a>
+<a id="__codelineno-32-13" name="__codelineno-32-13"></a><span class="c1"># Allow other services as needed</span>
+<a id="__codelineno-32-14" name="__codelineno-32-14"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>http<span class="w">  </span><span class="c1"># Port 80</span>
+<a id="__codelineno-32-15" name="__codelineno-32-15"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">8080</span>/tcp<span class="w">  </span><span class="c1"># Custom web port</span>
+<a id="__codelineno-32-16" name="__codelineno-32-16"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">1883</span><span class="w">  </span><span class="c1"># MQTT</span>
+<a id="__codelineno-32-17" name="__codelineno-32-17"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">5900</span><span class="w">  </span><span class="c1"># VNC</span>
+<a id="__codelineno-32-18" name="__codelineno-32-18"></a>
+<a id="__codelineno-32-19" name="__codelineno-32-19"></a><span class="c1"># Enable the firewall</span>
+<a id="__codelineno-32-20" name="__codelineno-32-20"></a>sudo<span class="w"> </span>ufw<span class="w"> </span><span class="nb">enable</span>
+<a id="__codelineno-32-21" name="__codelineno-32-21"></a>
+<a id="__codelineno-32-22" name="__codelineno-32-22"></a><span class="c1"># Check status</span>
+<a id="__codelineno-32-23" name="__codelineno-32-23"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose
+</code></pre></div></td></tr></table></div>
+<h3 id="create-a-limited-user-account">Create a Limited User Account</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span>
+<span class="normal"><a href="#__codelineno-33-5">5</a></span>
+<span class="normal"><a href="#__codelineno-33-6">6</a></span>
+<span class="normal"><a href="#__codelineno-33-7">7</a></span>
+<span class="normal"><a href="#__codelineno-33-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="c1"># Add a new user</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a>sudo<span class="w"> </span>adduser<span class="w"> </span>username
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a>
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="c1"># Add to sudo group (if needed)</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>username
+<a id="__codelineno-33-6" name="__codelineno-33-6"></a>
+<a id="__codelineno-33-7" name="__codelineno-33-7"></a><span class="c1"># Switch to new user</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8"></a>su<span class="w"> </span>-<span class="w"> </span>username
+</code></pre></div></td></tr></table></div>
+<h3 id="password-policies">Password Policies</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span>
+<span class="normal"><a href="#__codelineno-34-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="c1"># Install password quality checking library</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libpam-pwquality
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a>
+<a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="c1"># Edit password policy</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/security/pwquality.conf
+</code></pre></div></td></tr></table></div>
+<p>Add these settings:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-35-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-35-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-35-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-35-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-35-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-35-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-35-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-35-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-35-10">10</a></span>
+<span class="normal"><a href="#__codelineno-35-11">11</a></span>
+<span class="normal"><a href="#__codelineno-35-12">12</a></span>
+<span class="normal"><a href="#__codelineno-35-13">13</a></span>
+<span class="normal"><a href="#__codelineno-35-14">14</a></span>
+<span class="normal"><a href="#__codelineno-35-15">15</a></span>
+<span class="normal"><a href="#__codelineno-35-16">16</a></span>
+<span class="normal"><a href="#__codelineno-35-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a># Minimum password length
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a>minlen = 10
+<a id="__codelineno-35-3" name="__codelineno-35-3"></a>
+<a id="__codelineno-35-4" name="__codelineno-35-4"></a># Require at least one uppercase letter
+<a id="__codelineno-35-5" name="__codelineno-35-5"></a>ucredit = -1
+<a id="__codelineno-35-6" name="__codelineno-35-6"></a>
+<a id="__codelineno-35-7" name="__codelineno-35-7"></a># Require at least one lowercase letter
+<a id="__codelineno-35-8" name="__codelineno-35-8"></a>lcredit = -1
+<a id="__codelineno-35-9" name="__codelineno-35-9"></a>
+<a id="__codelineno-35-10" name="__codelineno-35-10"></a># Require at least one digit
+<a id="__codelineno-35-11" name="__codelineno-35-11"></a>dcredit = -1
+<a id="__codelineno-35-12" name="__codelineno-35-12"></a>
+<a id="__codelineno-35-13" name="__codelineno-35-13"></a># Require at least one special character
+<a id="__codelineno-35-14" name="__codelineno-35-14"></a>ocredit = -1
+<a id="__codelineno-35-15" name="__codelineno-35-15"></a>
+<a id="__codelineno-35-16" name="__codelineno-35-16"></a># Remember previous passwords
+<a id="__codelineno-35-17" name="__codelineno-35-17"></a>remember = 5
+</code></pre></div></td></tr></table></div>
+<h3 id="disable-unused-services">Disable Unused Services</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span>
+<span class="normal"><a href="#__codelineno-36-4">4</a></span>
+<span class="normal"><a href="#__codelineno-36-5">5</a></span>
+<span class="normal"><a href="#__codelineno-36-6">6</a></span>
+<span class="normal"><a href="#__codelineno-36-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="c1"># List enabled services</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2"></a>systemctl<span class="w"> </span>list-unit-files<span class="w"> </span>--state<span class="o">=</span>enabled
+<a id="__codelineno-36-3" name="__codelineno-36-3"></a>
+<a id="__codelineno-36-4" name="__codelineno-36-4"></a><span class="c1"># Disable unused services</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>bluetooth<span class="w">  </span><span class="c1"># If not using Bluetooth</span>
+<a id="__codelineno-36-6" name="__codelineno-36-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>avahi-daemon<span class="w">  </span><span class="c1"># If not using mDNS/Zeroconf</span>
+<a id="__codelineno-36-7" name="__codelineno-36-7"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>triggerhappy<span class="w">  </span><span class="c1"># If not using hotkey daemon</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="desktop-environment-configuration-gui">Desktop Environment Configuration (GUI)</h2>
+<p>If you're using the desktop environment, you can configure many settings graphically:</p>
+<h3 id="raspberry-pi-configuration-tool">Raspberry Pi Configuration Tool</h3>
+<p>Access via: Menu &gt; Preferences &gt; Raspberry Pi Configuration</p>
+<p>This graphical tool provides similar options to raspi-config, including:
+- System settings (hostname, auto-login)
+- Interface enablement (SSH, VNC, etc.)
+- Performance settings (overclock)
+- Localization</p>
+<h3 id="appearance-settings">Appearance Settings</h3>
+<p>Access via: Menu &gt; Preferences &gt; Appearance Settings</p>
+<p>Configure:
+- Desktop theme
+- Desktop background
+- Font sizes
+- Menu bar appearance</p>
+<h3 id="network-configuration_1">Network Configuration</h3>
+<p>Access via: Right-click on network icon in taskbar &gt; Wireless &amp; Wired Network Settings</p>
+<p>Configure:
+- WiFi networks
+- Proxy settings
+- Network adapter settings</p>
+<h2 id="system-monitoring-and-maintenance">System Monitoring and Maintenance</h2>
+<h3 id="system-monitoring-tools">System Monitoring Tools</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-37-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-37-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-37-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-37-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-37-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-37-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-37-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-37-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-37-10">10</a></span>
+<span class="normal"><a href="#__codelineno-37-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="c1"># Install monitoring tools</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>htop<span class="w"> </span>iotop<span class="w"> </span>nmon
+<a id="__codelineno-37-3" name="__codelineno-37-3"></a>
+<a id="__codelineno-37-4" name="__codelineno-37-4"></a><span class="c1"># Monitor system resources</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5"></a>htop
+<a id="__codelineno-37-6" name="__codelineno-37-6"></a>
+<a id="__codelineno-37-7" name="__codelineno-37-7"></a><span class="c1"># Monitor disk I/O</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8"></a>sudo<span class="w"> </span>iotop
+<a id="__codelineno-37-9" name="__codelineno-37-9"></a>
+<a id="__codelineno-37-10" name="__codelineno-37-10"></a><span class="c1"># Full system monitoring</span>
+<a id="__codelineno-37-11" name="__codelineno-37-11"></a>nmon
+</code></pre></div></td></tr></table></div>
+<h3 id="log-monitoring">Log Monitoring</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-38-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-38-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-38-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-38-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-38-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-38-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-38-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-38-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-38-10">10</a></span>
+<span class="normal"><a href="#__codelineno-38-11">11</a></span>
+<span class="normal"><a href="#__codelineno-38-12">12</a></span>
+<span class="normal"><a href="#__codelineno-38-13">13</a></span>
+<span class="normal"><a href="#__codelineno-38-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="c1"># View system logs</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-xe
+<a id="__codelineno-38-3" name="__codelineno-38-3"></a>
+<a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="c1"># Follow system logs in real-time</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-f
+<a id="__codelineno-38-6" name="__codelineno-38-6"></a>
+<a id="__codelineno-38-7" name="__codelineno-38-7"></a><span class="c1"># View specific service logs</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>ssh
+<a id="__codelineno-38-9" name="__codelineno-38-9"></a>
+<a id="__codelineno-38-10" name="__codelineno-38-10"></a><span class="c1"># View boot logs</span>
+<a id="__codelineno-38-11" name="__codelineno-38-11"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-b
+<a id="__codelineno-38-12" name="__codelineno-38-12"></a>
+<a id="__codelineno-38-13" name="__codelineno-38-13"></a><span class="c1"># Manage log size</span>
+<a id="__codelineno-38-14" name="__codelineno-38-14"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>--vacuum-time<span class="o">=</span>1week
+</code></pre></div></td></tr></table></div>
+<h3 id="scheduled-tasks-with-cron">Scheduled Tasks with cron</h3>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span>
+<span class="normal"><a href="#__codelineno-39-3">3</a></span>
+<span class="normal"><a href="#__codelineno-39-4">4</a></span>
+<span class="normal"><a href="#__codelineno-39-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="c1"># Edit user crontab</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2"></a>crontab<span class="w"> </span>-e
+<a id="__codelineno-39-3" name="__codelineno-39-3"></a>
+<a id="__codelineno-39-4" name="__codelineno-39-4"></a><span class="c1"># Edit system crontab</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5"></a>sudo<span class="w"> </span>crontab<span class="w"> </span>-e
+</code></pre></div></td></tr></table></div>
+<p>Example crontab entries:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-40-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-40-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-40-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-40-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-40-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-40-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-40-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-40-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-40-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1"></a># Format: minute hour day_of_month month day_of_week command
+<a id="__codelineno-40-2" name="__codelineno-40-2"></a>
+<a id="__codelineno-40-3" name="__codelineno-40-3"></a># Run a script daily at 3:00 AM
+<a id="__codelineno-40-4" name="__codelineno-40-4"></a>0 3 * * * /home/pi/scripts/daily_backup.sh
+<a id="__codelineno-40-5" name="__codelineno-40-5"></a>
+<a id="__codelineno-40-6" name="__codelineno-40-6"></a># Reboot every Sunday at 2:00 AM
+<a id="__codelineno-40-7" name="__codelineno-40-7"></a>0 2 * * 0 /sbin/reboot
+<a id="__codelineno-40-8" name="__codelineno-40-8"></a>
+<a id="__codelineno-40-9" name="__codelineno-40-9"></a># Check temperature every 5 minutes and record if high
+<a id="__codelineno-40-10" name="__codelineno-40-10"></a>*/5 * * * * /usr/bin/vcgencmd measure_temp | grep -q &quot;temp=8&quot; &amp;&amp; echo &quot;High temp at $(date)&quot; &gt;&gt; /home/pi/high_temps.log
+</code></pre></div></td></tr></table></div>
+<h2 id="troubleshooting-configuration-issues">Troubleshooting Configuration Issues</h2>
+<h3 id="common-issues-and-solutions">Common Issues and Solutions</h3>
+<h4 id="boot-problems-after-configuration-changes">Boot Problems After Configuration Changes</h4>
+<p>If your Pi won't boot after configuration changes:</p>
+<ol>
+<li>Mount the SD card on another computer</li>
+<li>Navigate to the boot partition</li>
+<li>Revert changes in config.txt or cmdline.txt</li>
+<li>For drastic cases, add <code>recovery</code> to end of cmdline.txt</li>
+</ol>
+<h4 id="display-issues">Display Issues</h4>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1"># Force safe video settings by adding to /boot/config.txt:</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="nv">hdmi_safe</span><span class="o">=</span><span class="m">1</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="networking-issues-after-static-ip-configuration">Networking Issues After Static IP Configuration</h4>
+<p>If you lose network connectivity after setting static IP:</p>
+<ol>
+<li>Check your network settings match your router's subnet</li>
+<li>Ensure gateway and DNS settings are correct</li>
+<li>Try:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>dhcpcd
+</code></pre></div></td></tr></table></div></li>
+</ol>
+<h4 id="permission-issues">Permission Issues</h4>
+<p>If you encounter permission denied errors after configuration:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span>
+<span class="normal"><a href="#__codelineno-43-2">2</a></span>
+<span class="normal"><a href="#__codelineno-43-3">3</a></span>
+<span class="normal"><a href="#__codelineno-43-4">4</a></span>
+<span class="normal"><a href="#__codelineno-43-5">5</a></span>
+<span class="normal"><a href="#__codelineno-43-6">6</a></span>
+<span class="normal"><a href="#__codelineno-43-7">7</a></span>
+<span class="normal"><a href="#__codelineno-43-8">8</a></span>
+<span class="normal"><a href="#__codelineno-43-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="c1"># Check file ownership</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2"></a>ls<span class="w"> </span>-l<span class="w"> </span>/path/to/file
+<a id="__codelineno-43-3" name="__codelineno-43-3"></a>
+<a id="__codelineno-43-4" name="__codelineno-43-4"></a><span class="c1"># Correct ownership</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5"></a>sudo<span class="w"> </span>chown<span class="w"> </span>user:group<span class="w"> </span>/path/to/file
+<a id="__codelineno-43-6" name="__codelineno-43-6"></a>
+<a id="__codelineno-43-7" name="__codelineno-43-7"></a><span class="c1"># Correct permissions</span>
+<a id="__codelineno-43-8" name="__codelineno-43-8"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/path/to/file<span class="w">  </span><span class="c1"># For config files</span>
+<a id="__codelineno-43-9" name="__codelineno-43-9"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>/path/to/directory<span class="w">  </span><span class="c1"># For directories</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="advanced-configuration-techniques">Advanced Configuration Techniques</h2>
+<h3 id="creating-custom-boot-configurations">Creating Custom Boot Configurations</h3>
+<p>You can create configuration sets for different scenarios:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1">1</a></span>
+<span class="normal"><a href="#__codelineno-44-2">2</a></span>
+<span class="normal"><a href="#__codelineno-44-3">3</a></span>
+<span class="normal"><a href="#__codelineno-44-4">4</a></span>
+<span class="normal"><a href="#__codelineno-44-5">5</a></span>
+<span class="normal"><a href="#__codelineno-44-6">6</a></span>
+<span class="normal"><a href="#__codelineno-44-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="c1"># Create a backup of working configurations</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.txt.backup
+<a id="__codelineno-44-3" name="__codelineno-44-3"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/cmdline.txt<span class="w"> </span>/boot/cmdline.txt.backup
+<a id="__codelineno-44-4" name="__codelineno-44-4"></a>
+<a id="__codelineno-44-5" name="__codelineno-44-5"></a><span class="c1"># Create scenario-specific configurations</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.overclock.txt
+<a id="__codelineno-44-7" name="__codelineno-44-7"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.media-center.txt
+</code></pre></div></td></tr></table></div>
+<p>Edit the NOOBS <code>recovery.cmdline</code> file to select configurations during boot:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span>
+<span class="normal"><a href="#__codelineno-45-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1"></a># Add to recovery.cmdline for selectable config
+<a id="__codelineno-45-2" name="__codelineno-45-2"></a>os_config=config.txt os_config2=config.overclock.txt os_config3=config.media-center.txt
+</code></pre></div></td></tr></table></div>
+<h3 id="user-level-configuration">User-Level Configuration</h3>
+<p>Create user-level configuration for applications:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1">1</a></span>
+<span class="normal"><a href="#__codelineno-46-2">2</a></span>
+<span class="normal"><a href="#__codelineno-46-3">3</a></span>
+<span class="normal"><a href="#__codelineno-46-4">4</a></span>
+<span class="normal"><a href="#__codelineno-46-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="c1"># Create config directory if it doesn&#39;t exist</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/app_name
+<a id="__codelineno-46-3" name="__codelineno-46-3"></a>
+<a id="__codelineno-46-4" name="__codelineno-46-4"></a><span class="c1"># Create default configuration</span>
+<a id="__codelineno-46-5" name="__codelineno-46-5"></a>nano<span class="w"> </span>~/.config/app_name/settings.conf
+</code></pre></div></td></tr></table></div>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li>
+<p><strong>Always backup configurations before making changes</strong>:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/boot/config.txt<span class="w"> </span>/boot/config.txt.<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Make one change at a time</strong> and test before proceeding</p>
+</li>
+<li>
+<p><strong>Document your configurations</strong> for future reference</p>
+</li>
+<li>
+<p><strong>Use version control</strong> for tracking configuration changes:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
+<span class="normal"><a href="#__codelineno-48-2">2</a></span>
+<span class="normal"><a href="#__codelineno-48-3">3</a></span>
+<span class="normal"><a href="#__codelineno-48-4">4</a></span>
+<span class="normal"><a href="#__codelineno-48-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="c1"># Initialize git repository for configs</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2"></a><span class="nb">cd</span><span class="w"> </span>/etc
+<a id="__codelineno-48-3" name="__codelineno-48-3"></a>sudo<span class="w"> </span>git<span class="w"> </span>init
+<a id="__codelineno-48-4" name="__codelineno-48-4"></a>sudo<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>*.conf
+<a id="__codelineno-48-5" name="__codelineno-48-5"></a>sudo<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial configuration&quot;</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Test critical services</strong> after configuration changes:
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1">1</a></span>
+<span class="normal"><a href="#__codelineno-49-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1"></a><span class="c1"># Example: Test SSH configuration without disconnecting</span>
+<a id="__codelineno-49-2" name="__codelineno-49-2"></a>sudo<span class="w"> </span>sshd<span class="w"> </span>-t
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<p>By following these guidelines and utilizing the configuration options described in this guide, you can fully customize your Raspberry Pi to suit your specific needs and use cases.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

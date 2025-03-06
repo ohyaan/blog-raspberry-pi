@@ -228,11 +228,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/initial_setup_guide/" class="md-nav__link">
+      <a href="../../getting-started/hardware_setup_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Initial Setup Guide
+    Hardware Setup for Raspberry Pi
     
   </span>
   
@@ -250,11 +250,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/hardware_setup/" class="md-nav__link">
+      <a href="../../getting-started/initial_setup_guide_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Hardware Setup
+    Initial Setup Guide for Raspberry Pi
     
   </span>
   
@@ -325,11 +325,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic-operations/essential_linux_commands/" class="md-nav__link">
+      <a href="../../basic-operations/system_settings_configuration_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Essential Linux Commands
+    System Settings Configuration for Raspberry Pi
     
   </span>
   
@@ -347,11 +347,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic-operations/networking_setup_and_management/" class="md-nav__link">
+      <a href="../../basic-operations/networking_setup_and_management_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Networking Setup and Management
+    Networking Setup and Management for Raspberry Pi
     
   </span>
   
@@ -369,11 +369,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic-operations/system_settings_configuration/" class="md-nav__link">
+      <a href="../../basic-operations/essential_linux_commands_for_raspberry_pi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    System Settings Configuration
+    Essential Linux Commands for Raspberry Pi
     
   </span>
   
@@ -531,9 +531,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#boot-to-rainbow-screen" class="md-nav__link">
+  <a href="#boot-to-rainbow-screen-no-os-load" class="md-nav__link">
     <span class="md-ellipsis">
-      Boot to Rainbow Screen
+      Boot to Rainbow Screen (No OS Load)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-panic-or-boot-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Panic or Boot Loops
     </span>
   </a>
   
@@ -558,6 +567,15 @@
   <a href="#under-voltage-warning" class="md-nav__link">
     <span class="md-ellipsis">
       Under-voltage Warning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overheating-and-thermal-throttling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overheating and Thermal Throttling
     </span>
   </a>
   
@@ -596,6 +614,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ethernet-connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethernet Connection Issues
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -620,8 +647,92 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#file-system-corruption" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Corruption
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-and-software-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application and Software Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application and Software Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-manager-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Manager Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-and-graphics-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display and Graphics Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpio-pin-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPIO Pin Not Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-devices-not-recognized" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Devices Not Recognized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-troubleshooting-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Troubleshooting Steps
+    </span>
+  </a>
   
 </li>
       
@@ -950,9 +1061,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#boot-to-rainbow-screen" class="md-nav__link">
+  <a href="#boot-to-rainbow-screen-no-os-load" class="md-nav__link">
     <span class="md-ellipsis">
-      Boot to Rainbow Screen
+      Boot to Rainbow Screen (No OS Load)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernel-panic-or-boot-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kernel Panic or Boot Loops
     </span>
   </a>
   
@@ -977,6 +1097,15 @@
   <a href="#under-voltage-warning" class="md-nav__link">
     <span class="md-ellipsis">
       Under-voltage Warning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overheating-and-thermal-throttling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overheating and Thermal Throttling
     </span>
   </a>
   
@@ -1015,6 +1144,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ethernet-connection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethernet Connection Issues
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1039,8 +1177,92 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#file-system-corruption" class="md-nav__link">
+    <span class="md-ellipsis">
+      File System Corruption
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-and-software-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application and Software Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application and Software Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-manager-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Manager Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-and-graphics-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display and Graphics Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpio-pin-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPIO Pin Not Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-devices-not-recognized" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Devices Not Recognized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-troubleshooting-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Troubleshooting Steps
+    </span>
+  </a>
   
 </li>
       
@@ -1061,99 +1283,767 @@
 
 
 <h1 id="common-issues-and-solutions">Common Issues and Solutions</h1>
+<p>This comprehensive troubleshooting guide addresses the most frequent problems Raspberry Pi users encounter. For each issue, we provide detailed symptoms, diagnostic steps, and multiple solution approaches.</p>
 <h2 id="boot-problems">Boot Problems</h2>
 <h3 id="cannot-boot-from-sd-card">Cannot Boot from SD Card</h3>
+<p><strong>Symptoms:</strong>
+- Raspberry Pi doesn't power on at all
+- Green activity LED doesn't flash
+- No display output</p>
+<p><strong>Diagnostic Steps:</strong>
 <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Check SD card for errors on another computer</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>fsck<span class="w"> </span>/dev/sdX1
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Re-flash SD card using Raspberry Pi Imager</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>rpi-imager
-</code></pre></div></td></tr></table></div>
-<h3 id="boot-to-rainbow-screen">Boot to Rainbow Screen</h3>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On another computer with SD card inserted</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># Replace sdX with your SD card identifier (e.g., sdb)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>sudo<span class="w"> </span>fsck<span class="w"> </span>-y<span class="w"> </span>/dev/sdX1
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
 <ol>
-<li>Check HDMI connection</li>
+<li>
+<p><strong>Check SD Card Integrity:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># On another Linux computer</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>badblocks<span class="w"> </span>-s<span class="w"> </span>-v<span class="w"> </span>/dev/sdX
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Re-Flash SD Card:</strong></p>
+</li>
+<li>Use the official <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a></li>
+<li>Select recommended OS</li>
+<li>
+<p>Use "erase" option before writing</p>
+</li>
+<li>
+<p><strong>Try Different SD Card:</strong></p>
+</li>
+<li>Use Class 10 or higher</li>
+<li>Stick to reputable brands (SanDisk, Samsung, Kingston)</li>
+<li>
+<p>16GB or larger recommended</p>
+</li>
+<li>
+<p><strong>Check Power Supply:</strong></p>
+</li>
+<li>Use official power supply when possible</li>
+<li>For Pi 4: 5.1V/3A USB-C</li>
+<li>For Pi 3: 5.1V/2.5A micro-USB</li>
+<li>Avoid cheap USB cables</li>
+</ol>
+<h3 id="boot-to-rainbow-screen-no-os-load">Boot to Rainbow Screen (No OS Load)</h3>
+<p><strong>Symptoms:</strong>
+- Boot starts but stops at rainbow screen
+- No further boot progress
+- No errors displayed</p>
+<p><strong>Diagnostic Steps:</strong>
+1. Check if green activity LED flashes after rainbow screen
+2. Try to access the Pi via SSH to determine if OS is running without display</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Check/Replace HDMI Connection:</strong></li>
 <li>Try different HDMI cable</li>
-<li>Check config.txt settings:
-<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># In /boot/config.txt</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="na">hdmi_force_hotplug</span><span class="o">=</span><span class="s">1</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="na">hdmi_safe</span><span class="o">=</span><span class="s">1</span>
-</code></pre></div></td></tr></table></div></li>
+<li>For Pi 4, use HDMI0 port (nearest power)</li>
+<li>
+<p>Try different display</p>
+</li>
+<li>
+<p><strong>Force HDMI Configuration:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">hdmi_force_hotplug</span><span class="o">=</span><span class="s">1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="na">hdmi_drive</span><span class="o">=</span><span class="s">2</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="na">hdmi_safe</span><span class="o">=</span><span class="s">1</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check bootcode.bin File:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># On another computer with SD card</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>ls<span class="w"> </span>/path/to/sd/card/boot/bootcode.bin
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="c1"># Re-copy if missing:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>cp<span class="w"> </span>/path/to/backup/bootcode.bin<span class="w"> </span>/path/to/sd/card/boot/
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>SD Card Corruption Fix:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># Backup data first!</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1"># Re-flash just the boot partition</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="kernel-panic-or-boot-loops">Kernel Panic or Boot Loops</h3>
+<p><strong>Symptoms:</strong>
+- Error messages mentioning "kernel panic"
+- System continuously reboots
+- Garbled text during boot</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Boot in Recovery Mode:</strong></li>
+<li>Hold SHIFT during boot</li>
+<li>
+<p>Select "Recovery Mode" or similar option</p>
+</li>
+<li>
+<p><strong>Fix File System Errors:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># On Linux computer with SD card</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>sudo<span class="w"> </span>fsck.ext4<span class="w"> </span>-y<span class="w"> </span>/dev/sdX2
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Edit cmdline.txt:</strong>
+   <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a># Add to existing line in /boot/cmdline.txt
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>fsck.repair=yes
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Last Resort - Clean Install:</strong></p>
+</li>
+<li>Backup your data</li>
+<li>Re-image SD card</li>
+<li>Restore only essential data</li>
 </ol>
 <h2 id="power-issues">Power Issues</h2>
 <h3 id="under-voltage-warning">Under-voltage Warning</h3>
-<p>Symptoms: Lightning bolt icon appears
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Check power status</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>vcgencmd<span class="w"> </span>get_throttled
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># Monitor voltage</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>vcgencmd<span class="w"> </span>measure_volts
-</code></pre></div></td></tr></table></div>
-Solution: Use official power supply (5.1V/3A for Pi 4)</p>
+<p><strong>Symptoms:</strong>
+- Lightning bolt icon in top-right corner
+- System throttling/slowing down
+- Random freezes or reboots
+- Peripherals (USB devices) failing</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># Check current power status</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>vcgencmd<span class="w"> </span>get_throttled
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="c1"># Output decoded:</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="c1"># 0x0: No throttling</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="c1"># 0x1: Currently under-voltage</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># 0x2: Currently capped frequency</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="c1"># 0x4: Currently throttled</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="c1"># 0x8: Soft temperature limit active</span>
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Use Proper Power Supply:</strong></li>
+<li>Raspberry Pi 4: Official 5.1V/3A USB-C</li>
+<li>Raspberry Pi 3: 5.1V/2.5A micro-USB</li>
+<li>
+<p>Check power supply rating on label</p>
+</li>
+<li>
+<p><strong>Reduce USB Load:</strong></p>
+</li>
+<li>Disconnect power-hungry USB devices</li>
+<li>
+<p>Use powered USB hub for multiple devices</p>
+</li>
+<li>
+<p><strong>Check/Replace USB Cable:</strong></p>
+</li>
+<li>Use thicker gauge cables</li>
+<li>Keep cable length under 1m</li>
+<li>
+<p>Avoid cheap cables</p>
+</li>
+<li>
+<p><strong>Monitor Power Consumption:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># Install power monitoring tools</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>sysstat
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="c1"># Monitor with:</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>sudo<span class="w"> </span>sar<span class="w"> </span>-u<span class="w"> </span><span class="m">1</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="overheating-and-thermal-throttling">Overheating and Thermal Throttling</h3>
+<p><strong>Symptoms:</strong>
+- Red temperature icon
+- Slow performance
+- Spontaneous reboots</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span>
+<span class="normal"><a href="#__codelineno-9-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c1"># Check current temperature</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>vcgencmd<span class="w"> </span>measure_temp
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="c1"># Monitor temperature continuously</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span>vcgencmd<span class="w"> </span>measure_temp
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c1"># Check throttling status</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a>vcgencmd<span class="w"> </span>get_throttled
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Improve Cooling:</strong></li>
+<li>Add heatsinks to CPU, RAM, and USB controller</li>
+<li>Add fan (5V, connect to GPIO pins)</li>
+<li>
+<p>Ensure proper ventilation in case</p>
+</li>
+<li>
+<p><strong>Reduce CPU Load:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># Set conservative governor</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cpufrequtils
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a>sudo<span class="w"> </span>cpufreq-set<span class="w"> </span>-g<span class="w"> </span>conservative
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Set Temperature Limits:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="na">temp_soft_limit</span><span class="o">=</span><span class="s">70</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="na">temp_limit</span><span class="o">=</span><span class="s">80</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Monitor Processes Using CPU:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>top
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="c1"># Or for a better view:</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>htop
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
 <h2 id="network-problems">Network Problems</h2>
 <h3 id="wi-fi-not-working">Wi-Fi Not Working</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span>
-<span class="normal"><a href="#__codelineno-3-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Check Wi-Fi interface</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>iwconfig
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># Restart networking</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>networking
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="c1"># Check Wi-Fi country setting</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a>sudo<span class="w"> </span>raspi-config
-</code></pre></div></td></tr></table></div>
+<p><strong>Symptoms:</strong>
+- No wireless networks appear
+- Cannot connect to wireless networks
+- Connection drops frequently</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="c1"># Check if Wi-Fi interface is present</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>iwconfig
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="c1"># Scan for available networks</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>sudo<span class="w"> </span>iwlist<span class="w"> </span>wlan0<span class="w"> </span>scan<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ESSID
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="c1"># Check current connection</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>iw<span class="w"> </span>dev<span class="w"> </span>wlan0<span class="w"> </span>link
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="c1"># Check country code setting (important for channel availability)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a>sudo<span class="w"> </span>iw<span class="w"> </span>reg<span class="w"> </span>get
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Check Wi-Fi Country Code:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>sudo<span class="w"> </span>raspi-config
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="c1"># Navigate to: Localisation Options &gt; WLAN Country</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Restart Networking Services:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>networking
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>wpa_supplicant
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Manually Configure Wi-Fi:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span>
+<span class="normal"><a href="#__codelineno-16-6">6</a></span>
+<span class="normal"><a href="#__codelineno-16-7">7</a></span>
+<span class="normal"><a href="#__codelineno-16-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/wpa_supplicant/wpa_supplicant.conf
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="c1"># Add:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="nv">network</span><span class="o">={</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">    </span><span class="nv">ssid</span><span class="o">=</span><span class="s2">&quot;YourNetworkName&quot;</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">    </span><span class="nv">psk</span><span class="o">=</span><span class="s2">&quot;YourPassword&quot;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">    </span><span class="nv">priority</span><span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="o">}</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check for RF Interference:</strong></p>
+</li>
+<li>Change Wi-Fi channel in router</li>
+<li>Move Raspberry Pi away from other electronic devices</li>
+<li>
+<p>Try 5GHz instead of 2.4GHz if supported</p>
+</li>
+<li>
+<p><strong>Update Firmware:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>full-upgrade
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a>sudo<span class="w"> </span>rpi-update<span class="w">  </span><span class="c1"># Use with caution!</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
 <h3 id="ssh-connection-failed">SSH Connection Failed</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span>
-<span class="normal"><a href="#__codelineno-4-8">8</a></span>
-<span class="normal"><a href="#__codelineno-4-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># Check SSH service status</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>ssh
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># Enable SSH</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ssh
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ssh
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># Check firewall rules</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status
-</code></pre></div></td></tr></table></div>
+<p><strong>Symptoms:</strong>
+- "Connection refused" errors
+- "No route to host" errors
+- Authentication failures</p>
+<p><strong>Diagnostic Steps:</strong>
+1. Check if Pi is on network with <code>ping raspberrypi.local</code>
+2. Verify IP address using router's DHCP client list
+3. Try direct connection via Ethernet if possible</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Check SSH Service Status:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span>
+<span class="normal"><a href="#__codelineno-18-3">3</a></span>
+<span class="normal"><a href="#__codelineno-18-4">4</a></span>
+<span class="normal"><a href="#__codelineno-18-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>ssh
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="c1"># If not running:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ssh
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ssh
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Enable SSH via File:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="c1"># Create file on boot partition:</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a>sudo<span class="w"> </span>touch<span class="w"> </span>/boot/ssh
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check Firewall Rules:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="c1"># If active, allow SSH:</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>ssh
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Reset SSH Keys:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/etc/ssh/ssh_host_*
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a>sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>openssh-server
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check SSH Configuration:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/ssh/sshd_config
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="c1"># Ensure these settings:</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a>PasswordAuthentication<span class="w"> </span>yes
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a>PermitRootLogin<span class="w"> </span>no
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="ethernet-connection-issues">Ethernet Connection Issues</h3>
+<p><strong>Symptoms:</strong>
+- No IP address assigned
+- Cannot access internet
+- "Network unreachable" errors</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-23-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-23-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-23-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-23-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-23-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-23-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-23-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-23-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-23-10">10</a></span>
+<span class="normal"><a href="#__codelineno-23-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="c1"># Check interface status</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a>ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>eth0
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="c1"># Test connection to router</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5"></a>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">192</span>.168.1.1<span class="w">  </span><span class="c1"># Replace with your router IP</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7"></a><span class="c1"># Check routing table</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8"></a>ip<span class="w"> </span>route
+<a id="__codelineno-23-9" name="__codelineno-23-9"></a>
+<a id="__codelineno-23-10" name="__codelineno-23-10"></a><span class="c1"># Check DNS resolution</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11"></a>nslookup<span class="w"> </span>google.com
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Restart Network Interface:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a>sudo<span class="w"> </span>ifdown<span class="w"> </span>eth0
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a>sudo<span class="w"> </span>ifup<span class="w"> </span>eth0
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Set Static IP:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span>
+<span class="normal"><a href="#__codelineno-25-5">5</a></span>
+<span class="normal"><a href="#__codelineno-25-6">6</a></span>
+<span class="normal"><a href="#__codelineno-25-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/dhcpcd.conf
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="c1"># Add:</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4"></a>interface<span class="w"> </span>eth0
+<a id="__codelineno-25-5" name="__codelineno-25-5"></a>static<span class="w"> </span><span class="nv">ip_address</span><span class="o">=</span><span class="m">192</span>.168.1.100/24
+<a id="__codelineno-25-6" name="__codelineno-25-6"></a>static<span class="w"> </span><span class="nv">routers</span><span class="o">=</span><span class="m">192</span>.168.1.1
+<a id="__codelineno-25-7" name="__codelineno-25-7"></a>static<span class="w"> </span><span class="nv">domain_name_servers</span><span class="o">=</span><span class="m">1</span>.1.1.1<span class="w"> </span><span class="m">8</span>.8.8.8
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check Cable and Port:</strong></p>
+</li>
+<li>Try different Ethernet cable</li>
+<li>Connect to different router port</li>
+<li>Look for activity LEDs on Ethernet port</li>
+</ol>
 <h2 id="storage-issues">Storage Issues</h2>
 <h3 id="running-out-of-space">Running Out of Space</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span>
-<span class="normal"><a href="#__codelineno-5-7">7</a></span>
-<span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># Check disk usage</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>df<span class="w"> </span>-h
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1"># Clear package cache</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>clean
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1"># Find large files</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>sudo<span class="w"> </span>du<span class="w"> </span>-h<span class="w"> </span>/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rh<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
-</code></pre></div></td></tr></table></div>
+<p><strong>Symptoms:</strong>
+- "No space left on device" errors
+- System becoming read-only
+- Applications failing to save data</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span>
+<span class="normal"><a href="#__codelineno-26-4">4</a></span>
+<span class="normal"><a href="#__codelineno-26-5">5</a></span>
+<span class="normal"><a href="#__codelineno-26-6">6</a></span>
+<span class="normal"><a href="#__codelineno-26-7">7</a></span>
+<span class="normal"><a href="#__codelineno-26-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="c1"># Check disk usage</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a>df<span class="w"> </span>-h
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a>
+<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="c1"># Find large files</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5"></a>sudo<span class="w"> </span>du<span class="w"> </span>-h<span class="w"> </span>/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rh<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
+<a id="__codelineno-26-6" name="__codelineno-26-6"></a>
+<a id="__codelineno-26-7" name="__codelineno-26-7"></a><span class="c1"># Check inode usage (can be full even with space available)</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8"></a>df<span class="w"> </span>-i
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Clean Package Cache:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>clean
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>autoremove
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Remove Unused Applications:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="c1"># List installed packages by size</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a>dpkg-query<span class="w"> </span>-W<span class="w"> </span>--showformat<span class="o">=</span><span class="s1">&#39;${Installed-Size;10}\t${Package}\n&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-n<span class="w"> </span>-r<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
+<a id="__codelineno-28-3" name="__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="c1"># Remove unwanted packages</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>package_name
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Clear Log Files:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>--vacuum-time<span class="o">=</span>1d
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Expand Filesystem:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>sudo<span class="w"> </span>raspi-config
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a><span class="c1"># Navigate to: Advanced Options &gt; Expand Filesystem</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Move Data to External Storage:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span>
+<span class="normal"><a href="#__codelineno-31-5">5</a></span>
+<span class="normal"><a href="#__codelineno-31-6">6</a></span>
+<span class="normal"><a href="#__codelineno-31-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="c1"># Mount USB drive</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/usb
+<a id="__codelineno-31-3" name="__codelineno-31-3"></a>sudo<span class="w"> </span>mount<span class="w"> </span>/dev/sda1<span class="w"> </span>/mnt/usb
+<a id="__codelineno-31-4" name="__codelineno-31-4"></a>
+<a id="__codelineno-31-5" name="__codelineno-31-5"></a><span class="c1"># Move large directories</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6"></a>sudo<span class="w"> </span>mv<span class="w"> </span>/home/pi/large_data<span class="w"> </span>/mnt/usb/
+<a id="__codelineno-31-7" name="__codelineno-31-7"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/mnt/usb/large_data<span class="w"> </span>/home/pi/large_data
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="file-system-corruption">File System Corruption</h3>
+<p><strong>Symptoms:</strong>
+- Read-only filesystem errors
+- Missing or inaccessible files
+- Boot failures
+- System freezes</p>
+<p><strong>Diagnostic Steps:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="c1"># Check filesystem for errors (on another computer)</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>sudo<span class="w"> </span>fsck<span class="w"> </span>-y<span class="w"> </span>/dev/sdX2<span class="w">  </span><span class="c1"># Replace X with your device letter</span>
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Perform File System Check:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="c1"># Create empty file in /forcefsck</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a>sudo<span class="w"> </span>touch<span class="w"> </span>/forcefsck
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Set Automatic Repair on Boot:</strong>
+   <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a># Add to /boot/cmdline.txt (all on one line)
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a>fsck.repair=yes
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Use Read-Only OS for Critical Applications:</strong></p>
+</li>
+<li>Consider using a read-only file system for mission-critical applications</li>
+<li>
+<p>Look into "overlay" filesystem options</p>
+</li>
+<li>
+<p><strong>Backup Regularly:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="c1"># Create disk image</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a>sudo<span class="w"> </span>dd<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>4M<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/sda<span class="w"> </span><span class="nv">of</span><span class="o">=</span>~/raspberry_backup.img<span class="w"> </span><span class="nv">status</span><span class="o">=</span>progress
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h2 id="application-and-software-issues">Application and Software Issues</h2>
+<h3 id="package-manager-errors">Package Manager Errors</h3>
+<p><strong>Symptoms:</strong>
+- "Failed to fetch" errors
+- "Hash sum mismatch"
+- "Unable to locate package"</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Update Package Lists:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>clean
+<a id="__codelineno-36-2" name="__codelineno-36-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span>--fix-missing
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Change Mirrors:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
+<span class="normal"><a href="#__codelineno-37-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apt/sources.list
+<a id="__codelineno-37-2" name="__codelineno-37-2"></a><span class="c1"># Change mirrors to different country</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Fix Broken Packages:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>-f<span class="w"> </span>install
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>--configure<span class="w"> </span>-a
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="display-and-graphics-issues">Display and Graphics Issues</h3>
+<p><strong>Symptoms:</strong>
+- Screen flickering
+- Wrong resolution
+- Black borders around screen
+- No display output despite booting</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Configure Display Resolution:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span>
+<span class="normal"><a href="#__codelineno-39-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2"></a><span class="na">hdmi_group</span><span class="o">=</span><span class="s">1</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3"></a><span class="na">hdmi_mode</span><span class="o">=</span><span class="s">16</span><span class="w">  </span><span class="c1"># 1080p 60Hz</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Fix Black Border Issues:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
+<span class="normal"><a href="#__codelineno-40-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2"></a><span class="na">disable_overscan</span><span class="o">=</span><span class="s">1</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Force Specific Output Mode:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="na">hdmi_drive</span><span class="o">=</span><span class="s">2</span><span class="w">  </span><span class="c1"># HDMI with audio</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h2 id="hardware-problems">Hardware Problems</h2>
+<h3 id="gpio-pin-not-working">GPIO Pin Not Working</h3>
+<p><strong>Symptoms:</strong>
+- No response from connected devices
+- Inconsistent behavior
+- Voltage readings not as expected</p>
+<p><strong>Diagnostic Steps:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1">1</a></span>
+<span class="normal"><a href="#__codelineno-42-2">2</a></span>
+<span class="normal"><a href="#__codelineno-42-3">3</a></span>
+<span class="normal"><a href="#__codelineno-42-4">4</a></span>
+<span class="normal"><a href="#__codelineno-42-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="c1"># Install GPIO tools</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-gpiozero
+<a id="__codelineno-42-3" name="__codelineno-42-3"></a>
+<a id="__codelineno-42-4" name="__codelineno-42-4"></a><span class="c1"># Test with Python</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from gpiozero import LED; led = LED(17); led.blink()&quot;</span>
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Check Wiring:</strong></li>
+<li>Ensure correct pin numbering (GPIO vs physical)</li>
+<li>Check for loose connections</li>
+<li>
+<p>Use multimeter to test connections</p>
+</li>
+<li>
+<p><strong>Reset GPIO State:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span>
+<span class="normal"><a href="#__codelineno-43-2">2</a></span>
+<span class="normal"><a href="#__codelineno-43-3">3</a></span>
+<span class="normal"><a href="#__codelineno-43-4">4</a></span>
+<span class="normal"><a href="#__codelineno-43-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="c1"># Install gpio utility</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>wiringpi
+<a id="__codelineno-43-3" name="__codelineno-43-3"></a>
+<a id="__codelineno-43-4" name="__codelineno-43-4"></a><span class="c1"># Reset all pins</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5"></a>gpio<span class="w"> </span>-g<span class="w"> </span>mode<span class="w"> </span>all<span class="w"> </span><span class="k">in</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check for Pin Damage:</strong></p>
+</li>
+<li>Measure voltage with multimeter</li>
+<li>Try different GPIO pins</li>
+<li>Look for physical damage</li>
+</ol>
+<h3 id="usb-devices-not-recognized">USB Devices Not Recognized</h3>
+<p><strong>Symptoms:</strong>
+- Devices not appearing in system
+- Disconnecting randomly
+- "Not enough power" errors</p>
+<p><strong>Diagnostic Commands:</strong>
+<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1">1</a></span>
+<span class="normal"><a href="#__codelineno-44-2">2</a></span>
+<span class="normal"><a href="#__codelineno-44-3">3</a></span>
+<span class="normal"><a href="#__codelineno-44-4">4</a></span>
+<span class="normal"><a href="#__codelineno-44-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="c1"># List USB devices</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2"></a>lsusb
+<a id="__codelineno-44-3" name="__codelineno-44-3"></a>
+<a id="__codelineno-44-4" name="__codelineno-44-4"></a><span class="c1"># Monitor USB events in real-time</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5"></a>sudo<span class="w"> </span>dmesg<span class="w"> </span>-w
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li><strong>Check Power Supply:</strong></li>
+<li>Use higher-rated power supply</li>
+<li>
+<p>Try powered USB hub</p>
+</li>
+<li>
+<p><strong>Enable Max USB Current:</strong>
+   <div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">INI</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span>
+<span class="normal"><a href="#__codelineno-45-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="c1"># Add to /boot/config.txt</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2"></a><span class="na">max_usb_current</span><span class="o">=</span><span class="s">1</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Disable USB Power Management:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1">1</a></span>
+<span class="normal"><a href="#__codelineno-46-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="c1"># For specific device (replace X:X with ID from lsusb)</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;on&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/bus/usb/devices/X-X/power/control
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h2 id="final-troubleshooting-steps">Final Troubleshooting Steps</h2>
+<p>If you've tried the specific solutions above and still have issues:</p>
+<ol>
+<li>
+<p><strong>Update Firmware and OS:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span>
+<span class="normal"><a href="#__codelineno-47-2">2</a></span>
+<span class="normal"><a href="#__codelineno-47-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-47-2" name="__codelineno-47-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>full-upgrade
+<a id="__codelineno-47-3" name="__codelineno-47-3"></a>sudo<span class="w"> </span>rpi-update<span class="w">  </span><span class="c1"># Use with caution, can cause instability</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Check Hardware Compatibility:</strong></p>
+</li>
+<li>Verify peripherals are compatible with your Pi model</li>
+<li>
+<p>Check <a href="https://elinux.org/RPi_VerifiedPeripherals">Raspberry Pi compatibility list</a></p>
+</li>
+<li>
+<p><strong>Monitor System Logs:</strong>
+   <div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
+<span class="normal"><a href="#__codelineno-48-2">2</a></span>
+<span class="normal"><a href="#__codelineno-48-3">3</a></span>
+<span class="normal"><a href="#__codelineno-48-4">4</a></span>
+<span class="normal"><a href="#__codelineno-48-5">5</a></span>
+<span class="normal"><a href="#__codelineno-48-6">6</a></span>
+<span class="normal"><a href="#__codelineno-48-7">7</a></span>
+<span class="normal"><a href="#__codelineno-48-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="c1"># View recent system messages</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail
+<a id="__codelineno-48-3" name="__codelineno-48-3"></a>
+<a id="__codelineno-48-4" name="__codelineno-48-4"></a><span class="c1"># View boot log</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5"></a>journalctl<span class="w"> </span>-b
+<a id="__codelineno-48-6" name="__codelineno-48-6"></a>
+<a id="__codelineno-48-7" name="__codelineno-48-7"></a><span class="c1"># Check system log</span>
+<a id="__codelineno-48-8" name="__codelineno-48-8"></a>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/syslog
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>Community Help:</strong></p>
+</li>
+<li><a href="https://forums.raspberrypi.com/">Raspberry Pi Forums</a></li>
+<li><a href="https://raspberrypi.stackexchange.com/">Raspberry Pi Stack Exchange</a></li>
+<li><a href="https://www.reddit.com/r/raspberry_pi/">Reddit r/raspberry_pi</a></li>
+</ol>
+<p>Remember, most Raspberry Pi issues have been encountered and solved by others in the community. Don't hesitate to search online using specific error messages or symptoms!</p>
 
 
 
