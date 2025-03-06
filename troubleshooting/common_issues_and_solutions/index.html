@@ -1138,22 +1138,13 @@ Solution: Use official power supply (5.1V/3A for Pi 4)</p>
 </code></pre></div></td></tr></table></div>
 <h2 id="storage-issues">Storage Issues</h2>
 <h3 id="running-out-of-space">Running Out of Space</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span>
-<span class="normal"><a href="#__codelineno-5-7">7</a></span>
-<span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># Check disk usage</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>df<span class="w"> </span>-h
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1"># Clear package cache</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>clean
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1"># Find large files</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>sudo<span class="w"> </span>du<span class="w"> </span>-h<span class="w"> </span>/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rh<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
-</code></pre></div></td></tr></table></div>
+<p>```bash</p>
+<h1 id="check-disk-usage">Check disk usage</h1>
+<p>df -h</p>
+<h1 id="clear-package-cache">Clear package cache</h1>
+<p>sudo apt clean</p>
+<h1 id="find-large-files">Find large files</h1>
+<p>sudo du -h / | sort -rh | head -20</p>
 
 
 

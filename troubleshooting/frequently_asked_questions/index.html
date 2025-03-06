@@ -1150,18 +1150,12 @@
 <a id="__codelineno-5-5" name="__codelineno-5-5"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="how-do-i-enable-vnc">How do I enable VNC?</h3>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span>
-<span class="normal"><a href="#__codelineno-6-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># Enable VNC through raspi-config</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>sudo<span class="w"> </span>raspi-config
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1"># Interface Options -&gt; VNC -&gt; Enable</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="c1"># Start VNC service</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>vncserver-x11-serviced
-</code></pre></div></td></tr></table></div>
+<p>```bash</p>
+<h1 id="enable-vnc-through-raspi-config">Enable VNC through raspi-config</h1>
+<p>sudo raspi-config</p>
+<h1 id="interface-options-vnc-enable">Interface Options -&gt; VNC -&gt; Enable</h1>
+<h1 id="start-vnc-service">Start VNC service</h1>
+<p>sudo systemctl start vncserver-x11-serviced</p>
 
 
 
